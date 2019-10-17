@@ -1,0 +1,32 @@
+:root {
+	--color-light: #777eff;
+	--color-dark: #5f65cc;
+	--content-height: 95vh;
+	--header-height: calc(100vh - var(--content-height));
+}
+
+.header {
+	height: var(--header-height);
+	background-color: var(--color-light);
+	margin-bottom: 1px;
+	box-shadow: 0px 2px 8px var(--color-dark);
+
+	display: flex;
+	align-items: center;
+}
+
+.header .logo {
+	margin-left: 5vw;
+}
+
+.header .logo img {
+	max-height: var(--header-height);
+	width: auto;
+}
+
+.content {
+	background-image: url('/fondo.png');
+	background-size: cover;
+	background-position: center;
+	height: var(--content-height);
+}
