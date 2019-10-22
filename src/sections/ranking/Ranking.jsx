@@ -2,7 +2,8 @@ import React from 'react';
 import ranking from './ranking'
 
 const Ranking = () => {
-
+	console.log(ranking)
+	let info;
 	return (
 		<div>
 			<h1>Ranking!</h1>
