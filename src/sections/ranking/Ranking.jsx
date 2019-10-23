@@ -1,5 +1,5 @@
 import React from 'react';
-import ranking from './ranking.json';
+import ranking from './fakeRank.json';
 
 const Ranking = () => {
 	console.log(ranking);
@@ -20,6 +20,7 @@ const Ranking = () => {
 								{' '}
 								<h5> Dinero: </h5> {res.Dinero}
 							</div>
+							º
 						</div>
 					);
 				})}
