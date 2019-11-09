@@ -1,19 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import fakeRank from './fakeRank.json';
 import fetch from 'node-fetch'
 
 const Ranking = () => {
 	
+	const [money, setMoney] = useState([{}])
+	const [fuck, setFuck] = useState([{}])
 
 	useEffect(() => {
-		
-
-		
-	});
-	
-	const [...OBJ] = fakeRank
+	  fetch(`http://localhost:8000/home`)
+		.then(res => res.json())
+		.then(res => {
+		const [...OBJ] = res.data
 		const money = [...OBJ]
 		const fuck = [...OBJ]
+			console.log(res.data)
+		  setMoney(money)
+		  setFuck(fuck)
+		})
+
+		
+	},[]);
+	
+/*	const [...OBJ] = fakeRank
+		const money = [...OBJ]
+		const fuck = [...OBJ]*/
 
 		const orderFuck = fuck.sort(function (a, b) {
 		
