@@ -61,7 +61,6 @@ const Ranking = () => {
 		<div>
 			<h1>Ranking!</h1>
 			<div></div>
-
 				<div>
 				<h2>How much you kick the peluche ? </h2> 
 					<div>
@@ -70,7 +69,6 @@ const Ranking = () => {
 								 return <tr>{result.Name + " " + parseInt(indx + 1 ) }</tr>
 							})
 						}
-
 					</div>
 				</div>
 				<div>
@@ -81,12 +79,8 @@ const Ranking = () => {
 								return <tr>{res.Name + " " + parseInt(indx + 1 )}</tr>
 							})
 						}
-
 					</div>
-
 				</div>
-
-
 			</div>
 		
 	);
