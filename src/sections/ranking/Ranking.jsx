@@ -9,13 +9,14 @@ const Ranking = () => {
 	const [fuck, setFuck] = useState([{}])
 
 	useEffect(() => {
-	  fetch(`http://localhost:8000/home`)
+	  fetch(`http://localhost:3000/home`)
 		.then(res => res.json())
 		.then(res => {
-		const [...OBJ] = res.data
+			console.log(res.get.data)
+		const [...OBJ] = res.get.data
 		const money = [...OBJ]
 		const fuck = [...OBJ]
-			console.log(res.data)
+			
 		  setMoney(money)
 		  setFuck(fuck)
 		})
