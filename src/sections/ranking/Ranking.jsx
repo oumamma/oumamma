@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import fakeRank from './fakeRank.json';
 import fetch from 'node-fetch'
@@ -55,10 +56,12 @@ const Ranking = () => {
 	
 	
 
+
 	return (
 		<div>
 			<h1>Ranking!</h1>
-			<div>
+			<div></div>
+
 				<div>
 				<h2>How much you kick the peluche ? </h2> 
 					<div>
@@ -83,8 +86,9 @@ const Ranking = () => {
 
 				</div>
 
+
 			</div>
-		</div>
+		
 	);
 };
 

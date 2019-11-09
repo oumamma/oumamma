@@ -1,4 +1,5 @@
 
+
      [
         {
             "Id": "16460505",
@@ -7,10 +8,9 @@
             "Country": "Madrid",
             "Money": 500,
             "Job": "mucho dienro",
-            "Fuck": 10,
-            "Social Network": "Tuirah",
-            "Id Social network": "gf6ghf6hf6h"
+            "Fuck": 10
         },
+
         {
             "Id": "16460505",
             "Name": "Your mom",
@@ -18,9 +18,7 @@
             "Country": "Madrid",
             "Money": 1,
             "Job": "mucho dienro",
-            "Fuck": 30,
-            "Social Network": "Tuirah",
-            "Id Social network": "gf6ghf6hf6h"
+            "Fuck": 30
         },
         {
             "Id": "16460505",
@@ -29,9 +27,7 @@
             "Country": "Madrid",
             "Money": 99,
             "Job": "mucho dienro",
-            "Fuck": 0,
-            "Social Network": "Tuirah",
-            "Id Social network": "gf6ghf6hf6h"
+            "Fuck": 0
         },
         {
             "Id": "16460505",
@@ -40,8 +36,9 @@
             "Country": "Madrid",
             "Money": 900,
             "Job": "mucho dienro",
-            "Fuck": 4,
-            "Social Network": "Tuirah",
-            "Id Social network": "gf6ghf6hf6h"
+            "Fuck": 4
         }
     ]
+
+
+
