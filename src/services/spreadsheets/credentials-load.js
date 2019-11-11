@@ -9,8 +9,8 @@ if (process.env.REFRESH_TOKEN === '...') {
 //prepare oauth2 client
 
 const auth = new google.auth.OAuth2(
-	'414884461150-iu3778fvg3lscamj4vjq5ckgi64ucre1.apps.googleusercontent.com',
-	'ZhZoSBYlSPkFSYHJtbP1FlOD',
+	'',
+	'',
 	'urn:ietf:wg:oauth:2.0:oob'
 );
 auth.setCredentials({
