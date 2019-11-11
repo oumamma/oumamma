@@ -1,89 +1,93 @@
-
 import React, { useEffect, useState } from 'react';
-import fakeRank from './fakeRank.json';
-import fetch from 'node-fetch'
+import fetch from 'node-fetch';
+import './Ranking.scss';
+import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
 
 const Ranking = () => {
-	
-	const [money, setMoney] = useState([{}])
-	const [fuck, setFuck] = useState([{}])
+	const [money, setMoney] = useState([{}]);
+	const [fuck, setFuck] = useState([{}]);
 
-	useEffect(() => {
-	  fetch(`http://localhost:3000/home`)
-		.then(res => res.json())
-		.then(res => {
-			console.log(res.get.data)
-		const [...OBJ] = res.get.data
-		const money = [...OBJ]
-		const fuck = [...OBJ]
-			
-		  setMoney(money)
-		  setFuck(fuck)
-		})
+	// useEffect(() => {
+	// 	fetch(`http://localhost:4000/home`)
+	// 		.then(res => res.json())
+	// 		.then(res => {
+	// 			console.log(res.get.data);
+	// 			const [...OBJ] = res.get.data;
+	// 			const money = [...OBJ];
+	// 			const fuck = [...OBJ];
 
-		
-	},[]);
-	
-/*	const [...OBJ] = fakeRank
+	// 			setMoney(money);
+	// 			setFuck(fuck);
+	// 		});
+	// }, []);
+
+	const getEntries = async () => {
+		await SpreadsheetService.getEntries().then(res => console.log(res));
+	};
+	getEntries();
+
+	/*	const [...OBJ] = fakeRank
 		const money = [...OBJ]
 		const fuck = [...OBJ]*/
 
-		const orderFuck = fuck.sort(function (a, b) {
-		
-			if (a.Fuck > b.Fuck) {
-				return -1;
-			}
-			if (a.Fuck < b.Fuck) {
-				return 1;
-			}
-	
-			return 0;
-		})
+	const orderFuck = fuck.sort(function(a, b) {
+		if (a.Fuck > b.Fuck) {
+			return -1;
+		}
+		if (a.Fuck < b.Fuck) {
+			return 1;
+		}
 
-		
+		return 0;
+	});
 
-		const orderMoney = money.sort(function (a, b) {
-			if (a.Money > b.Money) {
-				return -1;
-			}
-			if (a.Money < b.Money) {
-				return 1;
-			}
-	
-			return 0;
-		})
-	
+	const orderMoney = money.sort(function(a, b) {
+		if (a.Money > b.Money) {
+			return -1;
+		}
+		if (a.Money < b.Money) {
+			return 1;
+		}
 
-	
-	
-
+		return 0;
+	});
 
 	return (
-		<div>
-			<h1>Ranking!</h1>
-			<div></div>
-				<div>
-				<h2>How much you kick the peluche ? </h2> 
-					<div>
-						{
-							orderFuck.map((result,indx) => {
-								 return <tr>{result.Name + " " + parseInt(indx + 1 ) }</tr>
-							})
-						}
+		<div className="ranking">
+			<div className="toiler-paper-container">
+				<div className="left-toilet-paper-bg">
+					<div className="left-toilet-paper-content">
+						<div className="img-container">
+							<img src="/money.png"></img>
+						</div>
+						<div className="ranking-list">
+							{orderMoney.map((result, indx) => (
+								<div className="ranking-list-element">
+									<div className="ranking-list-element-position">{indx} </div>
+									<div className="ranking-list-element-name">{result.Name}</div>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
-				<div>
-					<h2>Show me the fucking money!</h2>
-					<div>
-						{
-							orderMoney.map((res, indx) => {
-								return <tr>{res.Name + " " + parseInt(indx + 1 )}</tr>
-							})
-						}
+				<div className="center"></div>
+				<div className="right-toilet-paper-bg">
+					<div className="right-toilet-paper-content">
+						<div className="img-container">
+							<img src="/fuck.png"></img>
+						</div>
+						<div className="ranking-list">
+							{orderFuck.map((result, indx) => (
+								<div className="ranking-list-element">
+									<div className="ranking-list-element-position">{indx} </div>
+									<div className="ranking-list-element-name">{result.Name}</div>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
-		
+		</div>
 	);
 };
 

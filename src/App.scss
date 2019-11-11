@@ -1,7 +1,7 @@
 :root {
 	--color-light: #777eff;
 	--color-dark: #5f65cc;
-	--content-height: 95vh;
+	--content-height: 100vh;
 	--header-height: calc(100vh - var(--content-height));
 }
 
@@ -29,4 +29,5 @@
 	background-size: cover;
 	background-position: center;
 	height: var(--content-height);
+	overflow: hidden;
 }
