@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import fetch from 'node-fetch';
 import './Ranking.scss';
-import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
+//import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
+import SpreadsheetService from './authRanking'
 
 const Ranking = () => {
 	const [money, setMoney] = useState([{}]);
@@ -22,7 +23,7 @@ const Ranking = () => {
 	// }, []);
 
 	const getEntries = async () => {
-		await SpreadsheetService.getEntries().then(res => console.log(res));
+		await SpreadsheetService.getInfoSheets().then(res => {return res});
 	};
 	getEntries();
 
