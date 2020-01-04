@@ -21,16 +21,25 @@ class SpreadsheetService {
 			.then(response => console.log('Success:', response));
 	}
 
-	async getEntries() {
-		const gapi = window.gapi;
-		await gapi.auth2.getAuthInstance().signIn();
-		gapi.client.sheets.spreadsheets.values
-			.get({
-				spreadsheetId: '1DDbnsGxLsPAJIQflI7jNet3INpeEJ2yh5hUZOpVc7w8'
-			})
-			.then(res => res.json())
-			.catch(error => console.error('Error:', error))
-			.then(response => console.log('Success:', response));
+	getRanking() {
+		const url =
+			'https://us-central1-oumamma-56c90.cloudfunctions.net/getRanking';
+		const options = {
+			mode: 'cors',
+			headers: {
+				'Content-Type': 'application/json',
+				'Access-Control-Allow-Origin': '*',
+				'Access-Control-Allow-Headers':
+					'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers'
+			}
+		};
+		return fetch(url, options).then(function(response) {
+			if (response.ok) {
+				return response.json();
+			} else {
+				console.log('Respuesta de red KO.');
+			}
+		});
 	}
 }
 

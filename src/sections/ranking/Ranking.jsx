@@ -1,57 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import fetch from 'node-fetch';
 import './Ranking.scss';
-//import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
-import SpreadsheetService from './authRanking'
+import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
 
 const Ranking = () => {
-	const [money, setMoney] = useState([{}]);
-	const [fuck, setFuck] = useState([{}]);
+	const [money, setMoney] = useState([]);
+	const [fuck, setFuck] = useState([]);
 
-	// useEffect(() => {
-	// 	fetch(`http://localhost:4000/home`)
-	// 		.then(res => res.json())
-	// 		.then(res => {
-	// 			console.log(res.get.data);
-	// 			const [...OBJ] = res.get.data;
-	// 			const money = [...OBJ];
-	// 			const fuck = [...OBJ];
+	useEffect(() => {
+		SpreadsheetService.getRanking().then(res => {
+			let moneyList = [...res];
+			moneyList = moneyList.sort((a, b) => (+a.Dinero > +b.Dinero ? 1 : -1));
+			setMoney(moneyList);
 
-	// 			setMoney(money);
-	// 			setFuck(fuck);
-	// 		});
-	// }, []);
-
-	const getEntries = async () => {
-		await SpreadsheetService.getInfoSheets().then(res => {return res});
-	};
-	getEntries();
-
-	/*	const [...OBJ] = fakeRank
-		const money = [...OBJ]
-		const fuck = [...OBJ]*/
-
-	const orderFuck = fuck.sort(function(a, b) {
-		if (a.Fuck > b.Fuck) {
-			return -1;
-		}
-		if (a.Fuck < b.Fuck) {
-			return 1;
-		}
-
-		return 0;
-	});
-
-	const orderMoney = money.sort(function(a, b) {
-		if (a.Money > b.Money) {
-			return -1;
-		}
-		if (a.Money < b.Money) {
-			return 1;
-		}
-
-		return 0;
-	});
+			let fuckList = [...res];
+			fuckList = fuckList.sort((a, b) => (+a.Sexo > +b.Sexo ? 1 : -1));
+			setFuck(fuckList);
+			return res;
+		});
+	}, []);
 
 	return (
 		<div className="ranking">
@@ -62,10 +29,17 @@ const Ranking = () => {
 							<img src="/money.png"></img>
 						</div>
 						<div className="ranking-list">
-							{orderMoney.map((result, indx) => (
-								<div className="ranking-list-element">
-									<div className="ranking-list-element-position">{indx} </div>
-									<div className="ranking-list-element-name">{result.Name}</div>
+							{money.map((result, indx) => (
+								<div
+									className="ranking-list-element"
+									key={result['Nombre red social']}
+								>
+									<div className="ranking-list-element-position">
+										{indx + 1}
+									</div>
+									<div className="ranking-list-element-name">
+										{result['Nombre red social']}
+									</div>
 								</div>
 							))}
 						</div>
@@ -78,10 +52,17 @@ const Ranking = () => {
 							<img src="/fuck.png"></img>
 						</div>
 						<div className="ranking-list">
-							{orderFuck.map((result, indx) => (
-								<div className="ranking-list-element">
-									<div className="ranking-list-element-position">{indx} </div>
-									<div className="ranking-list-element-name">{result.Name}</div>
+							{fuck.map((result, indx) => (
+								<div
+									className="ranking-list-element"
+									key={result['Nombre red social']}
+								>
+									<div className="ranking-list-element-position">
+										{indx + 1}
+									</div>
+									<div className="ranking-list-element-name">
+										{result['Nombre red social']}
+									</div>
 								</div>
 							))}
 						</div>
