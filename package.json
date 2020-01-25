@@ -16,7 +16,8 @@
 		"fakeData": "json-server -p 4000 src/sections/ranking/data.json",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"publish": "npm run build && firebase deploy"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
