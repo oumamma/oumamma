@@ -1,6 +1,6 @@
 class SpreadsheetService {
 	updateRow(landbotId, loginId, loginType, loginName) {
-		fetch('https://hooks.zapier.com/hooks/catch/5877074/ou9yg0j/', {
+		fetch('https://us-central1-oumamma-56c90.cloudfunctions.net/getRanking/inputToSheet', {
 			method: 'POST', // or 'PUT'
 			body: JSON.stringify({
 				landbotId,
