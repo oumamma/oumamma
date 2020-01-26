@@ -1,6 +1,6 @@
 class SpreadsheetService {
 	updateRow(landbotId, loginId, loginType, loginName) {
-		fetch('https://us-central1-oumamma-56c90.cloudfunctions.net/getRanking/inputToSheet', {
+		fetch('https://us-central1-oumamma-56c90.cloudfunctions.net/getRanking', {
 			method: 'POST', // or 'PUT'
 			body: JSON.stringify({
 				landbotId,
