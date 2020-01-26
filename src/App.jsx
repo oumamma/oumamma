@@ -11,7 +11,7 @@ function App() {
 		<>
 			<div className="header">
 				<div className="logo">
-					<img src="/logo.png" />
+					<img src="/logo.png" alt="logo" />
 				</div>
 			</div>
 			<BrowserRouter>

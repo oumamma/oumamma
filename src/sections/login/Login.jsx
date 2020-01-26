@@ -10,15 +10,15 @@ const Login = () => {
 
 	const loginWithGoogle = useCallback(() => {
 		AuthService.triggerGoogleSignIn();
-	});
+	}, []);
 
 	const loginWithFacebook = useCallback(() => {
 		AuthService.triggerFacebookSignIn();
-	});
+	}, []);
 
 	const logOut = useCallback(() => {
 		AuthService.signOut();
-	});
+	}, []);
 
 	useEffect(() => {
 		const triggerWebhook = async () => {

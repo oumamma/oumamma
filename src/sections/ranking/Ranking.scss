@@ -1,20 +1,65 @@
-.ranking {
-	width: 100%;
-	display: flex;
-	padding-top: 10vh;
-	background-image: url('/logo.png');
-	background-size: 30vw;
-	background-position: top;
-	background-repeat: no-repeat;
+@import '../SocialButtons.scss';
 
-	.toiler-paper-container {
-		width: 75%;
+:root {
+	--page-width: 100vw;
+	--container-flex-direction: row;
+
+	--logo-height: 15vmin;
+	--toilet-paper-container-height: 85vmin;
+	--bottom-social-height: 0;
+
+	--toilet-paper-block-width: 50%;
+	--toilet-paper-content-width: calc(var(--toilet-paper-block-width) * 1.3);
+	--center-block-width: 75%;
+
+	--ranking-entry-font-size: 1vw;
+}
+@media (max-width: 768px) {
+	:root {
+		--page-width: 200vw;
+		--container-flex-direction: row;
+
+		--logo-height: 11vh;
+		--toilet-paper-container-height: 80vh;
+		--bottom-social-height: 9vh;
+
+		--toilet-paper-block-width: 80vw;
+		--toilet-paper-content-width: auto;
+		--center-block-width: 5%;
+
+		--ranking-entry-font-size: 1.5vmax;
+	}
+}
+
+.ranking {
+	display: flex;
+	flex-direction: column;
+
+	.logo {
+		margin: 0 auto;
+		img {
+			height: var(--logo-height);
+		}
+	}
+
+	.toilet-paper-scroll-container {
+		height: var(--toilet-paper-container-height);
+		width: 100vw;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	.toilet-paper-container {
+		width: var(--page-width);
 		display: flex;
-		flex-grow: 1;
+		justify-content: space-between;
+		flex-direction: var(--container-flex-direction);
+		overflow-x: hidden;
+		padding-bottom: 5px;
+
 		background-image: url('/barrapapeles.png');
-		background-size: 85vw 6vw;
+		background-size: 85vmax 6vmin;
 		background-position: top;
-		background-position-y: 2.5vw;
+		background-position-y: 5vmax;
 		background-repeat: no-repeat;
 
 		.img-container {
@@ -23,7 +68,8 @@
 		}
 
 		[class*='toilet-paper-bg'] {
-			width: 50%;
+			height: 100%;
+			width: var(--toilet-paper-block-width);
 			padding-top: 17vh;
 			display: flex;
 			flex-direction: column;
@@ -32,8 +78,7 @@
 			background-repeat: no-repeat;
 			[class*='toilet-paper-content'] {
 				overflow: visible;
-				min-width: calc((var(--toilet-paper-width) * 3) / 10);
-				width: 66%;
+				width: var(--toilet-paper-content-width);
 			}
 		}
 		.left-toilet-paper-bg {
@@ -67,20 +112,57 @@
 			}
 		}
 		.center {
-			width: 75%;
-			height: var(--content-height);
+			width: var(--center-block-width);
+
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+
+			.social-share-container {
+				width: 60%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				margin: 0 auto;
+				padding-bottom: 5vmin;
+			}
+		}
+		.scroll-arrow {
+			position: absolute;
+			top: 48vh;
+
+			font-family: 'OuMamma';
+			font-size: 20px;
+			font-weight: bold;
+
+			border-radius: 50%;
+			width: 25px;
+			height: 25px;
+			border: 1px solid white;
+			background-color: white;
+			opacity: 0.7;
+
+			&.right {
+				right: 5px;
+			}
+			&.left {
+				left: 5px;
+			}
+			&:hover {
+				background-color: wheat;
+			}
 		}
 
 		.ranking-list {
 			display: flex;
-			justify-content: start;
+			justify-content: flex-start;
 			flex-direction: column;
 
-			height: 69.5vh;
+			height: calc((var(--toilet-paper-container-height) * 3) / 4);
 			overflow: scroll;
 
 			.ranking-list-element {
-				font-size: 1.5vmin;
+				font-size: var(--ranking-entry-font-size);
 
 				display: flex;
 				align-items: center;
@@ -92,6 +174,8 @@
 				border-radius: 25px;
 
 				.ranking-list-element-position {
+					font-size: calc(var(--ranking-entry-font-size) * 1.2);
+
 					padding-left: 15px;
 					padding-right: 15px;
 				}
@@ -99,6 +183,19 @@
 				&:last-child {
 					margin-bottom: 20px;
 				}
+			}
+		}
+	}
+
+	.social-share-mobile-container {
+		height: calc(100vh - var(--toilet-paper-container-height));
+		width: 100vw;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 3px;
+		div {
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 	}

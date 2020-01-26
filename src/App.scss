@@ -2,11 +2,10 @@
 	--color-light: #777eff;
 	--color-dark: #5f65cc;
 	--content-height: 100vh;
-	--header-height: calc(100vh - var(--content-height));
 }
 
 .header {
-	height: var(--header-height);
+	height: calc(100vh - var(--content-height));
 	background-color: var(--color-light);
 	margin-bottom: 1px;
 	box-shadow: 0px 2px 8px var(--color-dark);
@@ -20,7 +19,7 @@
 }
 
 .header .logo img {
-	max-height: var(--header-height);
+	max-height: calc(100vh - var(--content-height));
 	width: auto;
 }
 
@@ -30,4 +29,14 @@
 	background-position: center;
 	height: var(--content-height);
 	overflow: hidden;
+}
+
+@font-face {
+	font-family: 'OuMamma';
+	src: url('/mama.ttf');
+}
+
+.cool-font {
+	font-family: 'OuMamma';
+	color: #470a57;
 }
