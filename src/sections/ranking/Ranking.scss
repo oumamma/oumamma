@@ -1,30 +1,36 @@
 @import '../SocialButtons.scss';
 
 :root {
-	--page-width: 100vw;
+	--page-width: 100%;
+	--page-x-padding: 15px;
 	--container-flex-direction: row;
 
 	--logo-height: 15vmin;
 	--toilet-paper-container-height: 85vmin;
 	--bottom-social-height: 0;
 
+	--toiler-paper-bar-size: 5vmax;
+
 	--toilet-paper-block-width: 50%;
 	--toilet-paper-content-width: calc(var(--toilet-paper-block-width) * 1.3);
-	--center-block-width: 75%;
+	--center-block-width: 50%;
 
 	--ranking-entry-font-size: 1vw;
 }
 @media (max-width: 768px) {
 	:root {
 		--page-width: 200vw;
+		--page-x-padding: 0;
 		--container-flex-direction: row;
 
 		--logo-height: 11vh;
 		--toilet-paper-container-height: 80vh;
 		--bottom-social-height: 9vh;
 
+		--toiler-paper-bar-size: 10vmax;
+
 		--toilet-paper-block-width: 80vw;
-		--toilet-paper-content-width: auto;
+		--toilet-paper-content-width: 60vw;
 		--center-block-width: 5%;
 
 		--ranking-entry-font-size: 1.5vmax;
@@ -34,7 +40,7 @@
 .ranking {
 	display: flex;
 	flex-direction: column;
-
+	padding: 0 var(--page-x-padding);
 	.logo {
 		margin: 0 auto;
 		img {
@@ -44,7 +50,7 @@
 
 	.toilet-paper-scroll-container {
 		height: var(--toilet-paper-container-height);
-		width: 100vw;
+		width: 100%;
 		overflow-x: scroll;
 		overflow-y: hidden;
 	}
@@ -57,7 +63,7 @@
 		padding-bottom: 5px;
 
 		background-image: url('/barrapapeles.png');
-		background-size: 85vmax 6vmin;
+		background-size: 85vmax var(--toiler-paper-bar-size);
 		background-position: top;
 		background-position-y: 5vmax;
 		background-repeat: no-repeat;
@@ -88,12 +94,6 @@
 			.left-toilet-paper-content {
 				position: relative;
 				right: -1%;
-				.ranking-list {
-					.ranking-list-element {
-						position: relative;
-						// left: 2vmin;
-					}
-				}
 			}
 		}
 		.right-toilet-paper-bg {
@@ -104,11 +104,6 @@
 			.right-toilet-paper-content {
 				position: relative;
 				left: -2%;
-				.ranking-list {
-					.ranking-list-element {
-						// right: 2vmin;
-					}
-				}
 			}
 		}
 		.center {
@@ -125,6 +120,10 @@
 				justify-content: space-around;
 				margin: 0 auto;
 				padding-bottom: 5vmin;
+
+				button {
+					margin-bottom: 10px;
+				}
 			}
 		}
 		.scroll-arrow {
@@ -162,6 +161,7 @@
 			overflow: scroll;
 
 			.ranking-list-element {
+				position: relative;
 				font-size: var(--ranking-entry-font-size);
 
 				display: flex;
@@ -174,10 +174,18 @@
 				border-radius: 25px;
 
 				.ranking-list-element-position {
+					position: absolute;
 					font-size: calc(var(--ranking-entry-font-size) * 1.2);
 
 					padding-left: 15px;
 					padding-right: 15px;
+				}
+
+				.ranking-list-element-name {
+					margin-left: 25%;
+				}
+				&.my-element {
+					background-color: var(--color-light);
 				}
 
 				&:last-child {

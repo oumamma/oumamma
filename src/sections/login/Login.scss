@@ -1,0 +1,48 @@
+@import '../SocialButtons.scss';
+
+:root {
+	--page-width: 100vw;
+	--container-flex-direction: row;
+
+	--logo-height: 15vmin;
+	--login-content-height: 85vmin;
+}
+@media (max-width: 768px) {
+	:root {
+		--page-width: 100vw;
+		--container-flex-direction: row;
+
+		--logo-height: 15vmin;
+		--login-block-height: 85vmin;
+	}
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.logo {
+		margin: 0 auto;
+		img {
+			height: var(--logo-height);
+		}
+	}
+
+	.login-content {
+		height: var(--login-content-height);
+		display: flex;
+		align-items: center;
+		.box-container {
+			background-color: white;
+			padding: 50px;
+			border-radius: 6px;
+			display: flex;
+			flex-direction: column;
+
+			button {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

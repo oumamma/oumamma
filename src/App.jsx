@@ -21,7 +21,7 @@ function App() {
 							<Route exact path="/" component={Home} />
 							<Route path="/login/:id" component={Login} />
 							<Route path="/login" component={Login} />
-							<Route exact path="/ranking" component={Ranking} />
+							<Route path="/ranking/:loginId" component={Ranking} />
 							<Redirect to="/" />
 						</Switch>
 					</div>
