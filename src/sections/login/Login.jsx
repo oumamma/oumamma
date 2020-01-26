@@ -33,6 +33,7 @@ const Login = () => {
 				authData.providerId,
 				authData.displayName
 			);
+			AuthService.signOut();
 			setRedirect(true);
 		};
 		triggerWebhook();
