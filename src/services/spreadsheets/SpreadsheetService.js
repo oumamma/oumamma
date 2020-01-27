@@ -2,12 +2,12 @@ class SpreadsheetService {
 	updateRow(landbotId, loginId, loginType, loginName) {
 		fetch('https://us-central1-oumamma-56c90.cloudfunctions.net/getRanking', {
 			method: 'POST', // or 'PUT'
-			body: JSON.stringify({
+			body: {
 				landbotId,
 				loginId,
 				loginType,
 				loginName
-			}), // data can be `string` or {object}!
+			}, // data can be `string` or {object}!
 			mode: 'no-cors',
 			headers: {
 				'Content-Type': 'application/json',
