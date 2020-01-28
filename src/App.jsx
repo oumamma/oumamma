@@ -22,6 +22,7 @@ function App() {
 							<Route path="/login/:id" component={Login} />
 							<Route path="/login" component={Login} />
 							<Route path="/ranking/:loginId" component={Ranking} />
+							<Route path="/ranking" component={Ranking} />
 							<Redirect to="/" />
 						</Switch>
 					</div>

@@ -9,6 +9,8 @@ import './Ranking.scss';
 const Ranking = () => {
 	const { loginId } = useParams();
 
+	console.log(loginId);
+
 	const [loading, setLoading] = useState(true);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 	const [money, setMoney] = useState([]);
@@ -33,9 +35,7 @@ const Ranking = () => {
 				.filter(x => !isNaN(x.Dinero))
 				.sort((a, b) => (a.Dinero < b.Dinero ? 1 : -1));
 			setMoney(moneyList);
-			setMyMoneyPosition(
-				moneyList.findIndex(elem => elem['ID red social'] === loginId)
-			);
+			setMyMoneyPosition(moneyList.findIndex(isMyRow));
 
 			const fuckList = [...res]
 				.map(elem => ({
@@ -45,9 +45,7 @@ const Ranking = () => {
 				.filter(x => !isNaN(x.Sexo))
 				.sort((a, b) => (a.Sexo < b.Sexo ? 1 : -1));
 			setFuck(fuckList);
-			setMyFuckPosition(
-				fuckList.findIndex(elem => elem['ID red social'] === loginId)
-			);
+			setMyFuckPosition(fuckList.findIndex(isMyRow));
 			setLoading(false);
 		});
 	}, []);
@@ -93,7 +91,7 @@ const Ranking = () => {
 	}, [container]);
 
 	const isMyRow = useCallback(row => {
-		return row['ID red social'] === loginId;
+		return loginId && row['ID red social'] === loginId;
 	}, []);
 
 	return (
@@ -132,9 +130,7 @@ const Ranking = () => {
 						</div>
 					</div>
 					{isMobile && maxLeft && (
-						<div className="scroll-arrow right" onClick={scrollRight}>
-							{'>'}
-						</div>
+						<div className="scroll-arrow right" onClick={scrollRight}></div>
 					)}
 					<div className="center">
 						<div className="social-share-container">
@@ -153,9 +149,7 @@ const Ranking = () => {
 					</div>
 
 					{isMobile && maxRight && (
-						<div className="scroll-arrow left" onClick={scrollLeft}>
-							{'<'}
-						</div>
+						<div className="scroll-arrow left" onClick={scrollLeft}></div>
 					)}
 					<div className="right-toilet-paper-bg">
 						<div className="right-toilet-paper-content">

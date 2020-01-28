@@ -103,7 +103,7 @@
 			align-items: flex-start;
 			.right-toilet-paper-content {
 				position: relative;
-				left: -2%;
+				left: -10%;
 			}
 		}
 		.center {
@@ -134,18 +134,30 @@
 			font-size: 20px;
 			font-weight: bold;
 
-			border-radius: 50%;
-			width: 25px;
-			height: 25px;
-			border: 1px solid white;
-			background-color: white;
-			opacity: 0.7;
+			&:before {
+				font-size: 40px;
+				padding: 10px;
+				color: var(--color-light);
+
+				border: 1px solid white;
+				background-color: white;
+			}
 
 			&.right {
-				right: 5px;
+				right: 0;
+				&::before {
+					content: '>';
+					border-radius: 50% 0% 0% 50%;
+					padding-right: 1px;
+				}
 			}
 			&.left {
-				left: 5px;
+				left: 0;
+				&::before {
+					content: '<';
+					border-radius: 0% 50% 50% 0%;
+					padding-left: 1px;
+				}
 			}
 			&:hover {
 				background-color: wheat;
