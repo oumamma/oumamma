@@ -54,7 +54,7 @@ const Ranking = () => {
 	const fuckListElem = useRef(null);
 
 	const scrollRanking = useCallback((elem, percentile) => {
-		const scrollVal = elem.scrollHeight * percentile - 10;
+		const scrollVal = elem.scrollHeight * percentile + 23;
 		elem.scroll({ left: 0, top: scrollVal, behavior: 'smooth' });
 	}, []);
 
@@ -94,6 +94,10 @@ const Ranking = () => {
 		return loginId && row['ID red social'] === loginId;
 	}, []);
 
+	const isFamous = useCallback(row => {
+		return row['Famoso'] === '1';
+	}, []);
+
 	return (
 		<div className="ranking">
 			<div className="logo">
@@ -118,7 +122,11 @@ const Ranking = () => {
 											<div className="ranking-list-element-position cool-font">
 												{index + 1}
 											</div>
-											<div className="ranking-list-element-name">
+											<div
+												className={`ranking-list-element-name ${
+													isFamous(result) ? 'famous' : ''
+												}`}
+											>
 												{result['Nombre red social']}
 											</div>
 										</div>
@@ -168,7 +176,11 @@ const Ranking = () => {
 											<div className="ranking-list-element-position cool-font">
 												{index + 1}
 											</div>
-											<div className="ranking-list-element-name">
+											<div
+												className={`ranking-list-element-name ${
+													isFamous(result) ? 'famous' : ''
+												}`}
+											>
 												{result['Nombre red social']}
 											</div>
 										</div>
