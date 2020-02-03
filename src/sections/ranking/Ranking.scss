@@ -32,7 +32,7 @@
 
 		--toilet-paper-block-width: 80vw;
 		--toilet-paper-content-width: 60vw;
-		--center-block-width: 5%;
+		--center-block-width: 0%;
 		--right-toilet-paper-left: -10%;
 
 		--ranking-entry-font-size: 1.5vmax;
@@ -108,6 +108,7 @@
 			}
 		}
 		.center {
+			position: relative;
 			width: var(--center-block-width);
 
 			display: flex;
@@ -224,5 +225,16 @@
 				margin-right: 0;
 			}
 		}
+	}
+
+	.broncano-img {
+		// position: absolute;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		bottom: 100px;
+		right: -5%;
+		height: auto;
+		width: 100%;
+		max-width: 200px;
 	}
 }

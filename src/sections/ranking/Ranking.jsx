@@ -9,8 +9,6 @@ import './Ranking.scss';
 const Ranking = () => {
 	const { loginId } = useParams();
 
-	console.log(loginId);
-
 	const [loading, setLoading] = useState(true);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 	const [money, setMoney] = useState([]);
@@ -144,6 +142,7 @@ const Ranking = () => {
 						<div className="social-share-container">
 							{!isMobile && (
 								<>
+									<img src="/icon_broncano.png" className="broncano-img"></img>
 									<button type="button" className="social twitter-big">
 										Twitter
 									</button>
