@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import useElementScroll from '../../hooks/useElementScroll';
 import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
@@ -7,6 +7,8 @@ import Loading from '../Loading';
 import './Ranking.scss';
 
 const Ranking = () => {
+	const location = useLocation();
+	console.log(location);
 	const { loginId } = useParams();
 
 	const [loading, setLoading] = useState(true);
@@ -147,9 +149,25 @@ const Ranking = () => {
 										Twitter
 									</button>
 
-									<button type="button" className="social facebook-big">
+									<div
+										class="fb-share-button"
+										data-href="https://oumamma.com"
+										data-layout="button_count"
+										data-size="small"
+									>
+										<a
+											target="_blank"
+											href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
+												'https://oumamma.com' + location.pathname
+											)}&amp;src=sdkpreparse`}
+											class="fb-xfbml-parse-ignore social facebook-big"
+										>
+											Compartir
+										</a>
+									</div>
+									{/* <button type="button" className="social facebook-big">
 										Facebook
-									</button>
+									</button> */}
 								</>
 							)}
 						</div>
