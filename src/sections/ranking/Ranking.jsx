@@ -8,7 +8,6 @@ import './Ranking.scss';
 
 const Ranking = () => {
 	const location = useLocation();
-	console.log(location);
 	const { loginId } = useParams();
 
 	const [loading, setLoading] = useState(true);
@@ -145,24 +144,37 @@ const Ranking = () => {
 							{!isMobile && (
 								<>
 									<img src="/icon_broncano.png" className="broncano-img"></img>
-									<button type="button" className="social twitter-big">
-										Twitter
-									</button>
-
+									<div style={{ 'text-align': 'center' }}>
+										<a
+											class="twitter-share-button"
+											href="https://twitter.com/intent/tweet?text=Hello%20world"
+											data-size="large"
+										>
+											Tweet
+										</a>
+									</div>
 									<div
 										class="fb-share-button"
 										data-href="https://oumamma.com"
 										data-layout="button_count"
 										data-size="small"
+										style={{
+											'text-align': 'center'
+										}}
 									>
 										<a
 											target="_blank"
 											href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
 												'https://oumamma.com' + location.pathname
-											)}&amp;src=sdkpreparse`}
-											class="fb-xfbml-parse-ignore social facebook-big"
+											)}`}
+											class="fb-xfbml-parse-ignore social facebook-small"
+											style={{
+												width: '76px',
+												height: '28px',
+												margin: '0 auto'
+											}}
 										>
-											Compartir
+											Share
 										</a>
 									</div>
 									{/* <button type="button" className="social facebook-big">
