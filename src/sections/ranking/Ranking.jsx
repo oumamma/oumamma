@@ -147,7 +147,7 @@ const Ranking = () => {
 									<div style={{ 'text-align': 'center' }}>
 										<a
 											class="twitter-share-button"
-											href="https://twitter.com/intent/tweet?text=Hello%20world"
+											href="https://twitter.com/intent/tweet?text=Ou%20Mamma"
 											data-size="large"
 										>
 											Tweet
@@ -177,9 +177,6 @@ const Ranking = () => {
 											Share
 										</a>
 									</div>
-									{/* <button type="button" className="social facebook-big">
-										Facebook
-									</button> */}
 								</>
 							)}
 						</div>
@@ -224,12 +221,39 @@ const Ranking = () => {
 			</div>
 			{isMobile && (
 				<div className="social-share-mobile-container">
-					<button type="button" className="social twitter-small">
-						Twitter
-					</button>
-					<button type="button" className="social facebook-small">
-						Facebook
-					</button>
+					<div style={{ 'text-align': 'center' }}>
+						<a
+							class="twitter-share-button"
+							href="https://twitter.com/intent/tweet?text=Ou%20Mamma"
+							data-size="large"
+						>
+							Tweet
+						</a>
+					</div>
+					<div
+						class="fb-share-button"
+						data-href="https://oumamma.com"
+						data-layout="button_count"
+						data-size="small"
+						style={{
+							'text-align': 'center'
+						}}
+					>
+						<a
+							target="_blank"
+							href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
+								'https://oumamma.com' + location.pathname
+							)}`}
+							class="fb-xfbml-parse-ignore social facebook-small"
+							style={{
+								width: '76px',
+								height: '28px',
+								margin: '0 auto'
+							}}
+						>
+							Share
+						</a>
+					</div>
 				</div>
 			)}
 		</div>
