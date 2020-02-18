@@ -5,6 +5,8 @@ import useElementScroll from '../../hooks/useElementScroll';
 import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
 import Loading from '../Loading';
 import './Ranking.scss';
+import TwitterShare from './TwitterShare';
+import FacebookShare from './FacebookShare';
 
 const Ranking = () => {
 	const location = useLocation();
@@ -52,8 +54,8 @@ const Ranking = () => {
 	const moneyListElem = useRef(null);
 	const fuckListElem = useRef(null);
 
-	const scrollRanking = useCallback((elem, percentile) => {
-		const scrollVal = elem.scrollHeight * percentile + 23;
+	const scrollRanking = useCallback((elem, percentile, total) => {
+		const scrollVal = elem.scrollHeight * percentile;
 		elem.scroll({ left: 0, top: scrollVal, behavior: 'smooth' });
 	}, []);
 
@@ -62,7 +64,7 @@ const Ranking = () => {
 		if (!moneyListElem.current) return;
 
 		const percentile = myMoneyPosition / money.length;
-		scrollRanking(moneyListElem.current, percentile);
+		scrollRanking(moneyListElem.current, percentile, money.length);
 	}, [moneyListElem, myMoneyPosition]);
 
 	useEffect(() => {
@@ -70,7 +72,7 @@ const Ranking = () => {
 		if (!fuckListElem.current) return;
 
 		const percentile = myFuckPosition / fuck.length;
-		scrollRanking(fuckListElem.current, percentile);
+		scrollRanking(fuckListElem.current, percentile, fuck.length);
 	}, [fuckListElem, myFuckPosition]);
 
 	const formatMoney = useCallback(row => {
@@ -143,40 +145,33 @@ const Ranking = () => {
 						<div className="social-share-container">
 							{!isMobile && (
 								<>
-									<img src="/icon_broncano.png" className="broncano-img"></img>
-									<div style={{ 'text-align': 'center' }}>
-										<a
-											class="twitter-share-button"
-											href="https://twitter.com/intent/tweet?text=Ou%20Mamma"
-											data-size="large"
-										>
-											Tweet
-										</a>
-									</div>
-									<div
-										class="fb-share-button"
-										data-href="https://oumamma.com"
-										data-layout="button_count"
-										data-size="small"
-										style={{
-											'text-align': 'center'
-										}}
-									>
-										<a
-											target="_blank"
-											href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
-												'https://oumamma.com' + location.pathname
-											)}`}
-											class="fb-xfbml-parse-ignore social facebook-small"
+									<div>
+										<h1
 											style={{
-												width: '76px',
-												height: '28px',
-												margin: '0 auto'
+												fontWeight: 'bold',
+												fontSize: '50px',
+												marginBlockEnd: '0'
 											}}
 										>
-											Share
-										</a>
+											SHARE:
+										</h1>
+										<div
+											style={{
+												display: 'flex',
+												justifyContent: 'space-between',
+												width: '100%'
+											}}
+										>
+											<TwitterShare location={location}></TwitterShare>
+											<FacebookShare location={location}></FacebookShare>
+										</div>
 									</div>
+									<img src="/icon_broncano.png" className="broncano-img"></img>
+									<h3>Y si quieres posturear ya sabes screenshot + share</h3>
+									<h3>
+										Y etiquétanos <b>@OUMAMMA_RANKING</b> que lo mismo te llevas
+										una sorpresa
+									</h3>
 								</>
 							)}
 						</div>
@@ -220,39 +215,11 @@ const Ranking = () => {
 				</div>
 			</div>
 			{isMobile && (
-				<div className="social-share-mobile-container">
-					<div style={{ 'text-align': 'center' }}>
-						<a
-							class="twitter-share-button"
-							href="https://twitter.com/intent/tweet?text=Ou%20Mamma"
-							data-size="large"
-						>
-							Tweet
-						</a>
-					</div>
-					<div
-						class="fb-share-button"
-						data-href="https://oumamma.com"
-						data-layout="button_count"
-						data-size="small"
-						style={{
-							'text-align': 'center'
-						}}
-					>
-						<a
-							target="_blank"
-							href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
-								'https://oumamma.com' + location.pathname
-							)}`}
-							class="fb-xfbml-parse-ignore social facebook-small"
-							style={{
-								width: '76px',
-								height: '28px',
-								margin: '0 auto'
-							}}
-						>
-							Share
-						</a>
+				<div className="social-share-container">
+					<h1 style={{ fontWeight: 'bold' }}>SHARE:</h1>
+					<div className="social-share-mobile-container">
+						<TwitterShare location={location}></TwitterShare>
+						<FacebookShare location={location}></FacebookShare>
 					</div>
 				</div>
 			)}

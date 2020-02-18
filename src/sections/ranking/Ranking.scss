@@ -5,8 +5,8 @@
 	--page-x-padding: 15px;
 	--container-flex-direction: row;
 
-	--logo-height: 15vmin;
-	--toilet-paper-container-height: 93vmin;
+	--logo-height: 10vmin;
+	--toilet-paper-container-height: 90vmin;
 	--bottom-social-height: 0;
 
 	--toiler-paper-bar-size: 5vmax;
@@ -25,7 +25,7 @@
 		--container-flex-direction: row;
 
 		--logo-height: 11vh;
-		--toilet-paper-container-height: 80vh;
+		--toilet-paper-container-height: 70vh;
 		--bottom-social-height: 9vh;
 
 		--toiler-paper-bar-size: 10vmax;
@@ -58,6 +58,7 @@
 	}
 	.toilet-paper-container {
 		width: var(--page-width);
+		height: 100%;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: var(--container-flex-direction);
@@ -110,21 +111,35 @@
 		.center {
 			position: relative;
 			width: var(--center-block-width);
-
 			display: flex;
-			align-items: flex-end;
-			justify-content: flex-end;
+
+			margin-top: 5%;
 
 			.social-share-container {
-				width: 60%;
+				width: 80%;
 				display: flex;
+				align-items: center;
+				// justify-content: center;
 				flex-direction: column;
 				justify-content: space-around;
 				margin: 0 auto;
 				padding-bottom: 5vmin;
+				// background: url('/icon_broncano.png') top no-repeat;
+				// background-size: 60%;
 
-				button {
-					margin-bottom: 10px;
+				> div {
+					justify-self: flex-start;
+				}
+
+				> h3 {
+					background: rgba(0, 0, 0, 0.6);
+					border-radius: 5px;
+					margin-block-start: 5px;
+					margin-block-end: 5px;
+				}
+
+				b {
+					color: var(--color-blue);
 				}
 			}
 		}
@@ -172,7 +187,7 @@
 			justify-content: flex-start;
 			flex-direction: column;
 
-			height: calc((var(--toilet-paper-container-height) * 3.84) / 5);
+			height: calc(var(--toilet-paper-container-height) - 11.5vh);
 			overflow: scroll;
 
 			.ranking-list-element {
@@ -214,6 +229,12 @@
 		}
 	}
 
+	[class*='social-share'] {
+		font-family: 'Montserrat';
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+	}
 	.social-share-mobile-container {
 		height: calc(100vh - var(--toilet-paper-container-height));
 		width: 100vw;
@@ -230,11 +251,7 @@
 	.broncano-img {
 		// position: absolute;
 		margin: 0 auto;
-		margin-bottom: 0px;
-		bottom: 100px;
-		right: -5%;
-		height: auto;
-		width: 100%;
-		max-width: 200px;
+		height: 40vh;
+		width: auto;
 	}
 }
