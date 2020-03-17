@@ -5,6 +5,9 @@
 	--page-x-padding: 15px;
 	--container-flex-direction: row;
 
+	--landing-button-margin-top: 0;
+	--landing-button-margin-bottom: 0;
+
 	--logo-height: 10vmin;
 	--toilet-paper-container-height: 90vmin;
 	--bottom-social-height: 0;
@@ -24,9 +27,12 @@
 		--page-x-padding: 0;
 		--container-flex-direction: row;
 
+		--landing-button-margin-top: -2.5vh;
+		--landing-button-margin-bottom: 2.5vh;
+
 		--logo-height: 11vh;
 		--toilet-paper-container-height: 70vh;
-		--bottom-social-height: 9vh;
+		--bottom-social-height: 6vh;
 
 		--toiler-paper-bar-size: 10vmax;
 
@@ -53,6 +59,8 @@
 	.landing-button {
 		text-align: center;
 		text-transform: uppercase;
+		margin-top: var(--landing-button-margin-top);
+		margin-bottom: var(--landing-button-margin-bottom);
 	}
 
 	.toilet-paper-scroll-container {
@@ -251,8 +259,17 @@
 		text-align: center;
 		text-transform: uppercase;
 	}
+	.social-share-mobile {
+		display: flex;
+		flex-direction: column;
+		height: var(--bottom-social-height);
+
+		h1 {
+			margin-top: 0px;
+			margin-bottom: 0;
+		}
+	}
 	.social-share-mobile-container {
-		height: calc(100vh - var(--toilet-paper-container-height));
 		width: 100vw;
 		display: flex;
 		justify-content: space-around;

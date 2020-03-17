@@ -169,7 +169,6 @@ const Ranking = () => {
 										>
 											<TwitterShare location={location}></TwitterShare>
 											<FacebookShare location={location}></FacebookShare>
-											<WhatsappShare location={location}></WhatsappShare>
 										</div>
 									</div>
 									{/* <img src="/icon_broncano.png" className="broncano-img"></img> */}
@@ -217,11 +216,12 @@ const Ranking = () => {
 				</div>
 			</div>
 			{isMobile && (
-				<div className="social-share-container">
+				<div className="social-share-container social-share-mobile">
 					<h1 style={{ fontWeight: 'bold' }}>SHARE:</h1>
 					<div className="social-share-mobile-container">
 						<TwitterShare location={location}></TwitterShare>
 						<FacebookShare location={location}></FacebookShare>
+						<WhatsappShare location={location}></WhatsappShare>
 					</div>
 				</div>
 			)}
