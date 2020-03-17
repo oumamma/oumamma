@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { Link, useParams, useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import useElementScroll from '../../hooks/useElementScroll';
 import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
@@ -7,6 +7,7 @@ import Loading from '../Loading';
 import './Ranking.scss';
 import TwitterShare from './TwitterShare';
 import FacebookShare from './FacebookShare';
+import WhatsappShare from './WhatsappShare';
 
 const Ranking = () => {
 	const location = useLocation();
@@ -15,9 +16,13 @@ const Ranking = () => {
 	const [loading, setLoading] = useState(true);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 	const [money, setMoney] = useState([]);
+	// const [filterMoney, setFilterMoney] = useState();
+	// const [filteredMoney, setFilteredMoney] = useState([]);
 	const [myMoneyPosition, setMyMoneyPosition] = useState(0);
 	const [fuck, setFuck] = useState([]);
 	const [myFuckPosition, setMyFuckPosition] = useState(0);
+	// const [filterFuck, setFilterFuck] = useState();
+	// const [filteredFuck, setFilteredFuck] = useState([]);
 
 	const { width } = useWindowDimensions();
 	const { ref: container, maxLeft, maxRight } = useElementScroll();
@@ -103,6 +108,9 @@ const Ranking = () => {
 		<div className="ranking">
 			<div className="logo">
 				<img src="/logo.png" alt="logo" />
+				<Link to="/" className="social oumamma-big landing-button">
+					Quiero mi entrevista!
+				</Link>
 			</div>
 			<div ref={container} className="toilet-paper-scroll-container">
 				<div className="toilet-paper-container">
@@ -111,6 +119,7 @@ const Ranking = () => {
 							<div className="img-container">
 								<img src="/money.png" alt="Pray for money"></img>
 							</div>
+							{/* <input onChange={searchMoney}></input> */}
 							<div ref={moneyListElem} className="ranking-list">
 								{money.length > 0 ? (
 									money.map((result, index) => (
@@ -118,16 +127,12 @@ const Ranking = () => {
 											key={`${index}${result['ID red social']}`}
 											className={`ranking-list-element ${
 												isMyRow(result) ? 'my-element' : ''
-											}`}
+											} ${isFamous(result) ? 'famous' : ''}`}
 										>
 											<div className="ranking-list-element-position cool-font">
 												{index + 1}
 											</div>
-											<div
-												className={`ranking-list-element-name ${
-													isFamous(result) ? 'famous' : ''
-												}`}
-											>
+											<div className={`ranking-list-element-name`}>
 												{result['Nombre red social']}
 											</div>
 										</div>
@@ -164,9 +169,10 @@ const Ranking = () => {
 										>
 											<TwitterShare location={location}></TwitterShare>
 											<FacebookShare location={location}></FacebookShare>
+											<WhatsappShare location={location}></WhatsappShare>
 										</div>
 									</div>
-									<img src="/icon_broncano.png" className="broncano-img"></img>
+									{/* <img src="/icon_broncano.png" className="broncano-img"></img> */}
 									<h3>Y si quieres posturear ya sabes screenshot + share</h3>
 									<h3>
 										Y etiquétanos <b>@OUMAMMA_RANKING</b> que lo mismo te llevas
@@ -192,16 +198,12 @@ const Ranking = () => {
 											key={`${index}${result['Nombre red social']}`}
 											className={`ranking-list-element ${
 												isMyRow(result) ? 'my-element' : ''
-											}`}
+											} ${isFamous(result) ? 'famous' : ''}`}
 										>
 											<div className="ranking-list-element-position cool-font">
 												{index + 1}
 											</div>
-											<div
-												className={`ranking-list-element-name ${
-													isFamous(result) ? 'famous' : ''
-												}`}
-											>
+											<div className={`ranking-list-element-name`}>
 												{result['Nombre red social']}
 											</div>
 										</div>

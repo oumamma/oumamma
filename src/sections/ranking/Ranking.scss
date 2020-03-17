@@ -50,6 +50,11 @@
 		}
 	}
 
+	.landing-button {
+		text-align: center;
+		text-transform: uppercase;
+	}
+
 	.toilet-paper-scroll-container {
 		height: var(--toilet-paper-container-height);
 		width: 100%;
@@ -154,7 +159,7 @@
 			&:before {
 				font-size: 40px;
 				padding: 10px;
-				color: var(--color-light);
+				color: var(--color-violet-text);
 
 				border: 1px solid white;
 				background-color: white;
@@ -163,7 +168,8 @@
 			&.right {
 				right: 0;
 				&::before {
-					content: '>';
+					font-family: 'FontAwesome';
+					content: '\f061';
 					border-radius: 50% 0% 0% 50%;
 					padding-right: 1px;
 				}
@@ -171,7 +177,8 @@
 			&.left {
 				left: 0;
 				&::before {
-					content: '<';
+					font-family: 'FontAwesome';
+					content: '\f060';
 					border-radius: 0% 50% 50% 0%;
 					padding-left: 1px;
 				}
@@ -213,13 +220,22 @@
 
 				.ranking-list-element-name {
 					margin-left: 25%;
-					&.famous {
-						font-weight: bold;
-					}
 				}
 
 				&.my-element {
 					background-color: var(--color-blue);
+					// color: white;
+					font-weight: bold;
+					color: var(--color-violet-position);
+				}
+
+				&.famous {
+					// background-color: var(--color-blue-light);
+
+					.ranking-list-element-name {
+						font-weight: bold;
+						color: var(--color-violet-position);
+					}
 				}
 
 				&:last-child {

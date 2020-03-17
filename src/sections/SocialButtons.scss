@@ -104,8 +104,8 @@
 	padding-left: 15px;
 }
 
-.social.oumamma-small:active,
-.social.oumamma-big:active {
+.social.oumamma-small:hover,
+.social.oumamma-big:hover {
 	-webkit-box-shadow: 0px 2px 0px var(--color-dark);
 	-moz-box-shadow: 0px 2px 0px var(--color-dark);
 	box-shadow: 0px 2px 0px var(--color-dark);
@@ -113,6 +113,39 @@
 
 .social.oumamma-big:before {
 	background: var(--color-light);
+	content: '';
+	width: 0;
+	height: 0;
+	// width: 30px;
+	// height: 30px;
+	position: absolute;
+	// left: 10px;
+	// top: 18%;
+}
+
+.social.oumamma-light-small,
+.social.oumamma-light-big {
+	-webkit-box-shadow: 2px 2px 2px var(--color-blue-dark);
+	-moz-box-shadow: 2px 2px 2px var(--color-blue-dark);
+	box-shadow: 2px 2px 2px var(--color-blue-dark);
+}
+.social.oumamma-light-small {
+	background: var(--color-blue);
+}
+.social.oumamma-light-big {
+	background: var(--color-blue);
+	padding-left: 15px;
+}
+
+.social.oumamma-light-small:active,
+.social.oumamma-light-big:active {
+	-webkit-box-shadow: 0px 2px 0px var(--color-blue);
+	-moz-box-shadow: 0px 2px 0px var(--color-blue);
+	box-shadow: 0px 2px 0px var(--color-blue);
+}
+
+.social.oumamma-light-big:before {
+	background: var(--color-blue);
 	content: '';
 	width: 0;
 	height: 0;
@@ -231,6 +264,59 @@
 	-webkit-box-shadow: 2px 2px 2px #293f63;
 	-moz-box-shadow: 2px 2px 2px #293f63;
 	box-shadow: 2px 2px 2px #293f63;
+}
+
+.social.whatsapp-small,
+.social.whatsapp-big {
+	-webkit-box-shadow: 2px 2px 2px #293f63;
+	-moz-box-shadow: 2px 2px 2px #293f63;
+	box-shadow: 2px 2px 2px #293f63;
+}
+.social.whatsapp-small {
+	background: #3b5997 url('/wp_icon-01-01.png') no-repeat center center;
+}
+.social.whatsapp-big {
+	background: #3b5997;
+}
+
+.social.whatsapp-small:active,
+.social.whatsapp-big:active {
+	-webkit-box-shadow: 0px 2px 0px #293f63;
+	-moz-box-shadow: 0px 2px 0px #293f63;
+	box-shadow: 0px 2px 0px #293f63;
+}
+
+.social.whatsapp-big:before {
+	background: #3b5997 url('/wp_icon-01-01.png') no-repeat center center;
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 10px;
+	top: 18%;
+}
+
+.social.whatsapp-round {
+	-webkit-box-shadow: 2px 2px 2px #29b200;
+	-moz-box-shadow: 2px 2px 2px #29b200;
+	box-shadow: 2px 2px 2px #29b200;
+}
+.social.whatsapp-round {
+	background: #29b200 url('/wp_icon-01-01.png') no-repeat center center;
+	background-size: 56px;
+	background-position-y: -3px;
+	background-position-x: -3px;
+	border-radius: 50%;
+}
+
+.social.whatsapp-round:hover {
+	background: #2a9e07 url('/wp_icon-01-01.png') no-repeat center center;
+	background-size: 56px;
+	background-position-y: -3px;
+	background-position-x: -3px;
+	-webkit-box-shadow: 2px 2px 2px #29b200;
+	-moz-box-shadow: 2px 2px 2px #29b200;
+	box-shadow: 2px 2px 2px #29b200;
 }
 
 .social.google-small,
