@@ -34,7 +34,7 @@ const Login = () => {
 				authData.displayName
 			);
 			AuthService.signOut();
-			setRedirect(true);
+			setTimeout(() => setRedirect(true), 2000);
 		};
 		triggerWebhook();
 	});
