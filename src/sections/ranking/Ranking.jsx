@@ -5,9 +5,10 @@ import useElementScroll from '../../hooks/useElementScroll';
 import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
 import Loading from '../Loading';
 import './Ranking.scss';
-import TwitterShare from './TwitterShare';
-import FacebookShare from './FacebookShare';
-import WhatsappShare from './WhatsappShare';
+import TwitterShare from './share/TwitterShare';
+import FacebookShare from './share/FacebookShare';
+import WhatsappShare from './share/WhatsappShare';
+import CopyClipboardShare from './share/CopyClipboardShare';
 
 const Ranking = () => {
 	const location = useLocation();
@@ -108,9 +109,26 @@ const Ranking = () => {
 		<div className="ranking">
 			<div className="logo">
 				<img src="/logo.png" alt="logo" />
-				<Link to="/" className="social oumamma-big landing-button">
-					Quiero mi entrevista!
-				</Link>
+
+				{isMobile && (
+					<>
+						<Link to="/" className="social oumamma-big landing-button">
+							Quiero mi entrevista!
+						</Link>
+						<div className="social-share-container social-share-mobile">
+							<h4 style={{ fontWeight: 'bold' }}>SHARE RANKING:</h4>
+							<div className="social-share-mobile-container">
+								<TwitterShare location={location}></TwitterShare>
+								<FacebookShare location={location}></FacebookShare>
+								<WhatsappShare
+									location={location}
+									isMobile={true}
+								></WhatsappShare>
+								<CopyClipboardShare location={location}></CopyClipboardShare>
+							</div>
+						</div>
+					</>
+				)}
 			</div>
 			<div ref={container} className="toilet-paper-scroll-container">
 				<div className="toilet-paper-container">
@@ -144,17 +162,56 @@ const Ranking = () => {
 						</div>
 					</div>
 					{isMobile && maxLeft && (
-						<div className="scroll-arrow right" onClick={scrollRight}></div>
+						<div
+							className={`scroll-arrow right ${
+								money.length > 0 ? 'shake-right' : ''
+							}`}
+							onClick={scrollRight}
+						></div>
 					)}
 					<div className="center">
 						<div className="social-share-container">
 							{!isMobile && (
 								<>
 									<div>
+										<Link to="/" className="social oumamma-big landing-button">
+											Quiero mi entrevista!
+										</Link>
+										<div></div>
+									</div>
+									{/* {loginId && money.length > 0 && (
+										<div>
+											<div className="img-container">
+												<img src="/money.png" alt="Pray for money"></img>
+											</div>
+											{money.find(x => isMyRow(x)) ? (
+												<div key="" className="ranking-list-element">
+													<span className="cool-font">
+														{money.indexOf(money.find(x => isMyRow(x))) + 1}
+													</span>
+													<span className="">de</span>
+													<span className="cool-font"> {money.length} </span>
+												</div>
+											) : null}
+											<div className="img-container">
+												<img src="/fuck.png" alt="fuck"></img>
+											</div>
+											{fuck.find(x => isMyRow(x)) ? (
+												<div key="" className="ranking-list-element">
+													<span className="cool-font">
+														{fuck.indexOf(fuck.find(x => isMyRow(x))) + 1}
+													</span>
+													<span className="">de</span>
+													<span className="cool-font"> {fuck.length} </span>
+												</div>
+											) : null}
+										</div>
+									)} */}
+									<div>
 										<h1
 											style={{
 												fontWeight: 'bold',
-												fontSize: '50px',
+												fontSize: '40px',
 												marginBlockEnd: '0'
 											}}
 										>
@@ -163,27 +220,55 @@ const Ranking = () => {
 										<div
 											style={{
 												display: 'flex',
-												justifyContent: 'space-between',
+												justifyContent: 'space-around',
 												width: '100%'
 											}}
 										>
 											<TwitterShare location={location}></TwitterShare>
 											<FacebookShare location={location}></FacebookShare>
+											<WhatsappShare
+												location={location}
+												isMobile={false}
+											></WhatsappShare>
+											<CopyClipboardShare
+												location={location}
+											></CopyClipboardShare>
 										</div>
+										<h3>
+											<span>Y si quieres posturear </span>
+											<a
+												className="ig-share-link"
+												href={'https://instagram.com/oumamma_ranking'}
+												target="_blank"
+											>
+												en IG
+											</a>
+											<span> ya sabes screenshot + share</span>
+										</h3>
+										<h3>
+											<span>Y etiquétanos </span>
+											<a
+												className="ig-share-link"
+												href={'https://instagram.com/oumamma_ranking'}
+												target="_blank"
+											>
+												@OUMAMMA_RANKING
+											</a>
+											<span> que lo mismo te llevas una sorpresa</span>
+										</h3>
 									</div>
-									{/* <img src="/icon_broncano.png" className="broncano-img"></img> */}
-									<h3>Y si quieres posturear ya sabes screenshot + share</h3>
-									<h3>
-										Y etiquétanos <b>@OUMAMMA_RANKING</b> que lo mismo te llevas
-										una sorpresa
-									</h3>
 								</>
 							)}
 						</div>
 					</div>
 
 					{isMobile && maxRight && (
-						<div className="scroll-arrow left" onClick={scrollLeft}></div>
+						<div
+							className={`scroll-arrow left ${
+								money.length > 0 ? 'shake-left' : ''
+							}`}
+							onClick={scrollLeft}
+						></div>
 					)}
 					<div className="right-toilet-paper-bg">
 						<div className="right-toilet-paper-content">
@@ -215,16 +300,6 @@ const Ranking = () => {
 					</div>
 				</div>
 			</div>
-			{isMobile && (
-				<div className="social-share-container social-share-mobile">
-					<h1 style={{ fontWeight: 'bold' }}>SHARE:</h1>
-					<div className="social-share-mobile-container">
-						<TwitterShare location={location}></TwitterShare>
-						<FacebookShare location={location}></FacebookShare>
-						<WhatsappShare location={location}></WhatsappShare>
-					</div>
-				</div>
-			)}
 		</div>
 	);
 };

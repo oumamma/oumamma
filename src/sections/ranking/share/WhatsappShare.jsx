@@ -1,12 +1,16 @@
 import React from 'react';
 
-const WhatsappShare = ({ location }) => {
+const WhatsappShare = ({ location, isMobile }) => {
+	const baseUrl = isMobile
+		? 'whatsapp://send'
+		: 'https://web.whatsapp.com/send';
 	return (
 		<a
 			className="social whatsapp-round"
-			href={`whatsapp://send?text=Ouuu mamma! ${encodeURI(
+			href={`${baseUrl}?text=Ouuu mamma! ${encodeURI(
 				'https://oumamma.com' + location.pathname
 			)}`}
+			target="_blank"
 			data-action="share/whatsapp/share"
 		>
 			Share via Whatsapp
