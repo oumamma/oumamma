@@ -4,11 +4,9 @@ const Home = () => {
 	useEffect(() => {
 		window.myLandbot = new window.LandbotFrameWidget({
 			container: '#myLandbot',
-			// index: 'https://landbot.io/u/H-278074-YMM3YI18XURUT4ZC/index.html'
-			index: 'https://landbot.io/u/H-352449-0FUSBHW4UB7ABE4N/index.html'
+			index: 'https://landbot.io/u/H-406891-4QTTZU2266FA6HCP/index.html'
 		});
 		window.myLandbot.on('sendToLogin', data => {
-			console.log('wtf', data);
 			window.location.href = data;
 		});
 	});

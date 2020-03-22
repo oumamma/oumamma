@@ -7,13 +7,19 @@
 	--color-violet-position: #470a57;
 	--color-violet: #99459f;
 	--color-violet-text: #660066;
-	--content-height: 100vh;
+	--content-height: 98vh;
+	--footer-height: 2vh;
+	--footer-bg-color: #1a192b;
+}
+@media (max-width: 600px) {
+	:root {
+		--footer-bg-color: #4b424d;
+	}
 }
 
 .header {
-	height: calc(100vh - var(--content-height));
+	height: calc(100vh - var(--content-height) - var(--footer-height));
 	background-color: var(--color-light);
-	margin-bottom: 1px;
 	box-shadow: 0px 2px 8px var(--color-dark);
 
 	display: flex;
@@ -35,6 +41,18 @@
 	background-position: center;
 	height: var(--content-height);
 	overflow: hidden;
+}
+
+.footer {
+	height: var(--footer-height);
+	background-color: var(--footer-bg-color);
+
+	text-align: center;
+	font-size: 10px;
+	// opacity: 0.5;
+	a {
+		color: white;
+	}
 }
 
 @font-face {
