@@ -104,10 +104,6 @@
 			padding-top: 3vh;
 			margin: 0 auto;
 			text-align: center;
-
-			img {
-				max-width: var(--toilet-paper-block-width);
-			}
 		}
 		.left-toilet-paper-bg {
 			background-image: url('/leftpaper.png');
@@ -168,6 +164,9 @@
 				img {
 					max-width: unset;
 				}
+				// img {
+				// 	max-width: var(--toilet-paper-block-width);
+				// }
 			}
 			.ranking-list-element {
 				font-size: 1.2em;

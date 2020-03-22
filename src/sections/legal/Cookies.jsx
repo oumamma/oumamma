@@ -20,7 +20,7 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				política de cookies
+				Política de cookies
 			</span>
 		</h1>
 		<p
@@ -65,11 +65,14 @@ const Cookies = () => (
 			>
 				Nos preocupamos por tu privacidad y la información que compartes con
 				nosotros y queremos que comprendas cómo estamos utilizando y protegiendo
-				la información que recopilamos sobre ti. Ou Mamma es respetuoso con la
-				privacidad de los datos y adopta las mejores prácticas de conformidad
+				la información que recopilamos sobre ti. OuMamma.com es respetuoso con
+				la privacidad de los datos y adopta las mejores prácticas de conformidad
 				con las leyes y normas de privacidad aplicables, incluido el Reglamento
 				General de Protección de Datos de la UE (“GDPR”).
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -90,11 +93,14 @@ const Cookies = () => (
 				}}
 			>
 				Al usar este sitio web y dar tu consentimiento a esta Política de
-				cookies, aceptas que Ou Mamma pueda colocar cookies como se describe a
-				continuación, y aceptas la recopilación, uso compartido y uso de tus
+				cookies, aceptas que OuMamma.com pueda colocar cookies como se describe
+				a continuación, y aceptas la recopilación, uso compartido y uso de tus
 				datos personales para la personalización de publicidad u otros
 				servicios.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -114,7 +120,7 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				¿por qué utilizamos las cookies?
+				¿Por qué utilizamos las cookies?
 			</span>
 		</p>
 		<p
@@ -162,7 +168,7 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				¿qué son las cookies?
+				¿Qué son las cookies?
 			</span>
 		</p>
 		<p
@@ -208,9 +214,9 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Las cookies utilizadas por Ou Mamma te identifican como un usuario único
-				mediante una identificación de seguimiento. La cookie en sí misma es
-				anónima y no contiene ningún dato personal, excepto cuando dicha
+				Las cookies utilizadas por oumamma.com te identifican como un usuario
+				único mediante una identificación de seguimiento. La cookie en sí misma
+				es anónima y no contiene ningún dato personal, excepto cuando dicha
 				información ha sido suministrada explicitamente, como cuando proporciona
 				su nombre y dirección de correo electrónico al completar un formulario
 				de registro.
@@ -234,7 +240,7 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				gdpr y sus derechos de privacidad de la ue
+				GDPR y sus derechos de privacidad de la UE
 			</span>
 		</p>
 		<p
@@ -279,20 +285,20 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				En la medida en que cualquier cookie colocada por Ou Mamma o por un
+				En la medida en que cualquier cookie colocada por OuMamma.com o por un
 				tercero, como se describe anteriormente, pueda identificar de manera
 				única a una computadora, o la persona que usa esa computadora, bajo
 				GDPR, se trata de Datos Personales. Por lo tanto, la&nbsp;
 			</span>
 			<a
-				href="https://elpixelconsciente.com/politica-de-privacidad/"
+				href="https://oumamma.com/privacidad"
 				style={{ textDecoration: 'none' }}
 			>
 				<span
 					style={{
 						fontSize: '11pt',
 						fontFamily: 'inherit',
-						color: '#27ccc0',
+
 						backgroundColor: 'transparent',
 						fontWeight: 400,
 						fontStyle: 'normal',
@@ -340,7 +346,7 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				cambios y actualizaciones de la política de cookies
+				Cambios y actualizaciones de la política de cookies
 			</span>
 		</p>
 		<p
@@ -385,7 +391,7 @@ const Cookies = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				preguntas, inquietudes o quejas
+				Preguntas, inquietudes o quejas
 			</span>
 		</p>
 		<p
@@ -407,7 +413,7 @@ const Cookies = () => (
 				}}
 			>
 				Si tiened alguna pregunta, inquietud o reclamo acerca de las prácticas
-				de Datos personales de Ou Mamma con respecto a las cookies o esta
+				de Datos personales de OuMamma.com con respecto a las cookies o esta
 				Política de cookies, te recomendamos que te pongas en contacto con
 				nosotros en crew@oummamma.com
 			</span>
@@ -431,10 +437,10 @@ const Cookies = () => (
 				}}
 			>
 				Si crees que has sufrido daños debido a una violación de sus derechos
-				por parte de Ou Mamma en virtud de esta Política de Cookies, y Ou Mamma
-				no ha manejado tu reclamo de una manera razonablemente suficiente,
-				cualquier residente de la UE también puede presentar una queja ante la
-				autoridad de supervisión correspondiente.
+				por parte de OuMamma.com en virtud de esta Política de Cookies, y
+				OuMamma.com no ha manejado tu reclamo de una manera razonablemente
+				suficiente, cualquier residente de la UE también puede presentar una
+				queja ante la autoridad de supervisión correspondiente.
 			</span>
 		</p>
 		<p>

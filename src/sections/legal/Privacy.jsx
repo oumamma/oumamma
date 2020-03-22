@@ -109,9 +109,12 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Te damos la bienvenida a la web y te invitamos a conocer estos términos
-				antes de que facilites tus datos personales en ella.
+				Te damos la bienvenida a la web de oumamma.com y te invitamos a conocer
+				estos términos antes de que facilites tus datos personales en ella.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -131,7 +134,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				menores de edad
+				Menores de edad
 			</span>
 		</p>
 		<p
@@ -217,6 +220,9 @@ const Privacy = () => (
 				no debes registrarte como usuario.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -235,7 +241,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				algunos principios que debes conocer
+				Algunos principios que debes conocer
 			</span>
 		</p>
 		<p
@@ -261,6 +267,9 @@ const Privacy = () => (
 				están garantizados en esta web.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -279,8 +288,8 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Me he esforzado en crear un espacio seguro y confiable y por eso quiero
-				compartir mis principios respecto a tu privacidad:
+				Nos hemos esforzado en crear un espacio seguro y confiable y por eso
+				quiero compartir mis principios respecto a tu privacidad:
 			</span>
 		</p>
 		<ul style={{ marginTop: 0, marginBottom: 0 }}>
@@ -288,8 +297,8 @@ const Privacy = () => (
 				dir="ltr"
 				style={{
 					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
+					fontSize: '12pt',
+					fontFamily: 'Raleway,sans-serif',
 
 					backgroundColor: 'transparent',
 					fontWeight: 400,
@@ -297,8 +306,7 @@ const Privacy = () => (
 					fontVariant: 'normal',
 					textDecoration: 'none',
 					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
+					whiteSpace: 'pre'
 				}}
 			>
 				<p
@@ -307,8 +315,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -319,7 +327,7 @@ const Privacy = () => (
 							whiteSpace: 'pre-wrap'
 						}}
 					>
-						Nunca solicito información personal a menos que realmente sea
+						Nunca solicitamos información personal a menos que realmente sea
 						necesaria para prestarte los servicios que me requieras.
 					</span>
 				</p>
@@ -328,8 +336,8 @@ const Privacy = () => (
 				dir="ltr"
 				style={{
 					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
+					fontSize: '12pt',
+					fontFamily: 'Raleway,sans-serif',
 
 					backgroundColor: 'transparent',
 					fontWeight: 400,
@@ -337,8 +345,7 @@ const Privacy = () => (
 					fontVariant: 'normal',
 					textDecoration: 'none',
 					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
+					whiteSpace: 'pre'
 				}}
 			>
 				<p
@@ -347,8 +354,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -359,9 +366,9 @@ const Privacy = () => (
 							whiteSpace: 'pre-wrap'
 						}}
 					>
-						Nunca comparto información personal de mis usuarios con nadie,
-						excepto para cumplir con la ley o en caso de que cuente con tu
-						autorización expresa.
+						Nunca compartimos información personal de nuestros usuarios con
+						nadie, excepto para cumplir con la ley o en caso de que cuente con
+						tu autorización expresa.
 					</span>
 				</p>
 			</li>
@@ -369,8 +376,8 @@ const Privacy = () => (
 				dir="ltr"
 				style={{
 					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
+					fontSize: '12pt',
+					fontFamily: 'Raleway,sans-serif',
 
 					backgroundColor: 'transparent',
 					fontWeight: 400,
@@ -378,8 +385,7 @@ const Privacy = () => (
 					fontVariant: 'normal',
 					textDecoration: 'none',
 					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
+					whiteSpace: 'pre'
 				}}
 			>
 				<p
@@ -388,8 +394,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -400,12 +406,15 @@ const Privacy = () => (
 							whiteSpace: 'pre-wrap'
 						}}
 					>
-						Nunca utilizo tus datos personales con una finalidad diferente a la
-						expresada en esta política de privacidad.
+						Nunca utilizamos tus datos personales con una finalidad diferente a
+						la expresada en esta política de privacidad.
 					</span>
 				</p>
 			</li>
 		</ul>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -431,6 +440,9 @@ const Privacy = () => (
 				donde se recaben datos de carácter personal.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -449,7 +461,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				regulaciones legales a las que se acoge esta web
+				Regulaciones legales a las que se acoge esta web
 			</span>
 		</p>
 		<p
@@ -470,7 +482,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Ou Mamma ha adecuado esta web a las exigencias de la Ley Orgánica
+				Oumamma.com a ha adecuado esta web a las exigencias de la Ley Orgánica
 				15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal
 				(LOPD), y al Real Decreto 1720/2007, de 21 de diciembre, conocido como
 				el Reglamento de desarrollo de la LOPD. Cumple también con el Reglamento
@@ -480,311 +492,12 @@ const Privacy = () => (
 				Información y Comercio Electrónico (LSSICE o LSSI).
 			</span>
 		</p>
-		<p
-			dir="ltr"
-			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
-		>
-			<span
-				style={{
-					fontSize: '16.5pt',
-					fontFamily: '"Gobold Pixel"',
-
-					fontWeight: 700,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre-wrap'
-				}}
-			>
-				responsable del tratamiento de tus datos personales
-			</span>
+		<p>
+			<br />
 		</p>
-		<ul style={{ marginTop: 0, marginBottom: 0 }}>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Identidad del Responsable:
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						&nbsp;Erika López Antón
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Nombre comercial:
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						&nbsp; Ou Mamma
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Dirección:
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						&nbsp;C/Villablanca, 85, 28032, Madrid
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Correo electrónico:
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						&nbsp;
-					</span>
-					<a href="mailto:crew@oumamma.com" style={{ textDecoration: 'none' }}>
-						<span
-							style={{
-								fontSize: '9pt',
-								fontFamily: 'inherit',
-								color: '#27ccc0',
-
-								fontWeight: 400,
-								fontStyle: 'normal',
-								fontVariant: 'normal',
-								textDecoration: 'none',
-								verticalAlign: 'baseline',
-								whiteSpace: 'pre-wrap'
-							}}
-						>
-							crew@oumamma.com
-						</span>
-					</a>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Actividad:
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						&nbsp;Servicios de marketing digital
-					</span>
-				</p>
-			</li>
-		</ul>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -804,7 +517,7 @@ const Privacy = () => (
 				}}
 			>
 				A efectos de lo previsto en el Reglamento General de Protección de Datos
-				antes citado, los datos personales que me envíes a través de los
+				antes citado, los datos personales que nos envíes a través de los
 				formularios de la web recibirán el tratamiento de datos de “Usuarios de
 				la web y suscriptores”.
 			</span>
@@ -827,10 +540,13 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Para el tratamiento de datos de mis usuarios implemento todas las
-				medidas técnicas y organizativas de seguridad establecidas en la
+				Para el tratamiento de datos de nuestros usuarios implementamos todas
+				las medidas técnicas y organizativas de seguridad establecidas en la
 				legislación vigente.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -850,7 +566,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				¿cómo he obtenido tus datos?
+				¿Cómo he obtenido tus datos?
 			</span>
 		</p>
 		<p
@@ -871,7 +587,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Los datos personales que trato en Ou Mamma proceden de:
+				Los datos personales que trato en Oumamma.com proceden de:
 			</span>
 		</p>
 		<ul style={{ marginTop: 0, marginBottom: 0 }}>
@@ -879,8 +595,8 @@ const Privacy = () => (
 				dir="ltr"
 				style={{
 					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
+					fontSize: '12pt',
+					fontFamily: 'Raleway,sans-serif',
 
 					backgroundColor: 'transparent',
 					fontWeight: 400,
@@ -888,8 +604,7 @@ const Privacy = () => (
 					fontVariant: 'normal',
 					textDecoration: 'none',
 					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
+					whiteSpace: 'pre'
 				}}
 			>
 				<p
@@ -898,8 +613,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -910,7 +625,7 @@ const Privacy = () => (
 							whiteSpace: 'pre-wrap'
 						}}
 					>
-						Formulario de contacto.
+						Landbot
 					</span>
 				</p>
 			</li>
@@ -918,8 +633,8 @@ const Privacy = () => (
 				dir="ltr"
 				style={{
 					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
+					fontSize: '12pt',
+					fontFamily: 'Raleway,sans-serif',
 
 					backgroundColor: 'transparent',
 					fontWeight: 400,
@@ -927,8 +642,7 @@ const Privacy = () => (
 					fontVariant: 'normal',
 					textDecoration: 'none',
 					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
+					whiteSpace: 'pre'
 				}}
 			>
 				<p
@@ -937,8 +651,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -949,7 +663,7 @@ const Privacy = () => (
 							whiteSpace: 'pre-wrap'
 						}}
 					>
-						Formulario de suscripción.
+						Login Facebook
 					</span>
 				</p>
 			</li>
@@ -957,8 +671,8 @@ const Privacy = () => (
 				dir="ltr"
 				style={{
 					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
+					fontSize: '12pt',
+					fontFamily: 'Raleway,sans-serif',
 
 					backgroundColor: 'transparent',
 					fontWeight: 400,
@@ -966,8 +680,7 @@ const Privacy = () => (
 					fontVariant: 'normal',
 					textDecoration: 'none',
 					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
+					whiteSpace: 'pre'
 				}}
 			>
 				<p
@@ -976,8 +689,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -988,7 +701,7 @@ const Privacy = () => (
 							whiteSpace: 'pre-wrap'
 						}}
 					>
-						Comentarios en el blog.
+						Login Google
 					</span>
 				</p>
 			</li>
@@ -996,8 +709,8 @@ const Privacy = () => (
 				dir="ltr"
 				style={{
 					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
+					fontSize: '12pt',
+					fontFamily: 'Raleway,sans-serif',
 
 					backgroundColor: 'transparent',
 					fontWeight: 400,
@@ -1005,8 +718,7 @@ const Privacy = () => (
 					fontVariant: 'normal',
 					textDecoration: 'none',
 					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
+					whiteSpace: 'pre'
 				}}
 			>
 				<p
@@ -1015,8 +727,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -1027,50 +739,14 @@ const Privacy = () => (
 							whiteSpace: 'pre-wrap'
 						}}
 					>
-						Formulario de venta.
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'disc',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							backgroundColor: 'transparent',
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Registro de cuenta.
+						Google Spreadsheets
 					</span>
 				</p>
 			</li>
 		</ul>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -1089,7 +765,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				¿cuáles son tus derechos cuando me facilitas tus datos?
+				¿Cuáles son tus derechos cuando nos facilitas tus datos?
 			</span>
 		</p>
 		<p
@@ -1110,30 +786,13 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Cualquier persona tiene derecho a obtener confirmación sobre si en Ou
-				Mamma estoy tratando datos personales que me conciernen o no.
-			</span>
-		</p>
-		<p
-			dir="ltr"
-			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-		>
-			<span
-				style={{
-					fontSize: '12pt',
-					fontFamily: 'Raleway,sans-serif',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre-wrap'
-				}}
-			>
+				Cualquier persona tiene derecho a obtener confirmación sobre si, en
+				Oumamma.com estamos tratando datos personales que nos conciernen o no.
 				Las personas interesadas tienen derecho a:
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<ul style={{ marginTop: 0, marginBottom: 0 }}>
 			<li
@@ -1159,8 +818,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -1198,8 +857,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -1237,8 +896,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -1276,8 +935,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -1315,8 +974,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -1332,6 +991,9 @@ const Privacy = () => (
 				</p>
 			</li>
 		</ul>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -1502,7 +1164,7 @@ const Privacy = () => (
 				}}
 			>
 				&nbsp;del tratamiento de sus datos, en cuyo caso, únicamente los
-				conservaré para el ejercicio o la defensa de reclamaciones.
+				conservaremos para el ejercicio o la defensa de reclamaciones.
 			</span>
 		</p>
 		<p
@@ -1556,8 +1218,8 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				&nbsp;al tratamiento de sus datos. Erika López Antón dejará de tratar
-				los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la
+				&nbsp;al tratamiento de sus datos. Oumamma.com dejará de tratar los
+				datos, salvo por motivos legítimos imperiosos, o el ejercicio o la
 				defensa de posibles reclamaciones. También podrán solicitar la&nbsp;
 			</span>
 			<span
@@ -1618,6 +1280,12 @@ const Privacy = () => (
 				Reglamento.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -1636,7 +1304,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				¿con qué finalidad trato tus datos personales?
+				¿Con qué finalidad tratamos tus datos personales?
 			</span>
 		</p>
 		<p
@@ -1657,395 +1325,20 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Cuando un usuario se conecta con esta web por ejemplo para comentar un
-				post, mandar un correo al titular, suscribirse o realizar alguna
-				contratación, está facilitando información de carácter personal de la
-				que es responsable: Erika López Antón. Esa información puede incluir
-				datos de carácter personal como pueden ser tu dirección IP, nombre,
-				dirección física, dirección de correo electrónico, número de teléfono y
-				otra información. Al facilitar esta información, el usuario da su
-				consentimiento para que su información sea recopilada, utilizada,
+				Cuando un usuario se conecta con esta web y cumplimenta el chat
+				habilitado en la pagina principal está facilitando información de
+				carácter personal de la que es responsable: Oumamma.com. Esa información
+				puede incluir datos de carácter personal como pueden ser tu dirección
+				IP, nombre, dirección física, dirección de correo electrónico, número de
+				teléfono y otra información. Al facilitar esta información, el usuario
+				da su consentimiento para que su información sea recopilada, utilizada,
 				gestionada y almacenada por&nbsp;oumamma.com sólo como se describe en
 				el&nbsp;Aviso Legal&nbsp;y en la presente&nbsp;Política de Privacidad.
 			</span>
 		</p>
-		<p
-			dir="ltr"
-			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-		>
-			<span
-				style={{
-					fontSize: '12pt',
-					fontFamily: 'Raleway,sans-serif',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre-wrap'
-				}}
-			>
-				En Ou Mamma existen diferentes sistemas de captura de información
-				personal y trato la información que me facilitan las personas
-				interesadas con el siguiente fin por cada sistema de captura
-				(formularios):
-			</span>
+		<p>
+			<br />
 		</p>
-		<ol style={{ marginTop: 0, marginBottom: 0 }}>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'decimal',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							backgroundColor: 'transparent',
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Formulario de contacto:
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							backgroundColor: 'transparent',
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						&nbsp;Solicito los siguientes datos personales: nombre, email, para
-						responder a los requerimientos de los usuarios de oumamma.com. Por
-						ejemplo, puedo utilizar esos datos para responder a tu solicitud y
-						dar respuesta a las dudas, quejas, comentarios o inquietudes que
-						puedas tener relativas a la información incluida en la web, los
-						servicios que se prestan a través de la web, el tratamiento de sus
-						datos personales, cuestiones referentes a los textos legales
-						incluidos en la web, así como cualesquiera otras consultas que pueda
-						tener y que no estén sujetas a las condiciones de contratación. Te
-						informo que los datos que me facilitas estarán ubicados en los
-						servidores de Soluciones Web On Line, S.L. (proveedor de hosting de
-						Ou Mamma) dentro de la UE.
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'decimal',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							backgroundColor: 'transparent',
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Formulario de venta:
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							backgroundColor: 'transparent',
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						&nbsp;El usuario dispone de diferentes formularios de compra sujetos
-						a las condiciones de contratación especificadas en mis condiciones
-						de contratación particulares para cada producto o servicio donde se
-						te requerirán datos de contacto y de pago. Solicito los siguientes
-						datos personales: nombre, apellido, CIF/NIF, email, dirección, datos
-						de facturación. Te informo que los datos que me facilitas estarán
-						ubicados en los servidores de Soluciones Web On Line, S.L (proveedor
-						de hosting de Ou Mamma) dentro de la UE.
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'decimal',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							backgroundColor: 'transparent',
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Formulario de suscripción a contenidos:&nbsp;
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							backgroundColor: 'transparent',
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						En este caso, solicito los siguientes datos personales: nombre,
-						email, para gestionar la lista de suscripciones, enviar boletines,
-						promociones y ofertas especiales, facilitados por el usuario al
-						realizar la suscripción. Dentro de la web existen varios formularios
-						para activar la suscripción. Los boletines electrónicos o
-						newsletters están gestionados por Mailchimp. Al utilizar los
-						servicios de esta plataforma para la realización de campañas de
-						marketing por correo electrónico, gestión de suscripciones y envío
-						de boletines, debes saber que Mailchimp tiene sus servidores
-						alojados fuera de la UE, en EEUU y está acogido al acuerdo EU-US
-						Privacy Shield, cuya información está disponible&nbsp;
-					</span>
-					<a
-						href="https://www.privacyshield.gov/list"
-						style={{ textDecoration: 'none' }}
-					>
-						<span
-							style={{
-								fontSize: '9pt',
-								fontFamily: 'inherit',
-								color: '#27ccc0',
-								backgroundColor: 'transparent',
-								fontWeight: 400,
-								fontStyle: 'normal',
-								fontVariant: 'normal',
-								textDecoration: 'none',
-								verticalAlign: 'baseline',
-								whiteSpace: 'pre-wrap'
-							}}
-						>
-							aquí
-						</span>
-					</a>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							backgroundColor: 'transparent',
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						, aprobado por el Comité Europeo de Protección.
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'decimal',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							backgroundColor: 'transparent',
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Formulario de alta para comentarios del blog:&nbsp;
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							backgroundColor: 'transparent',
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Para comentar las publicaciones del blog oumamma.com se requiere que
-						el usuario se dé de alta a través de este formulario. En este caso,
-						solicito los siguientes datos personales: nombre, email, sitio
-						web.&nbsp;Una vez dado de alta, el usuario podrá realizar tantos
-						comentarios como desee y dar respuesta sobre los anteriores.&nbsp;Te
-						informo que los datos que me facilitas estarán ubicados en los
-						servidores de Soluciones Web On Line, S.L. (proveedor de hosting de
-						Ou Mamma) dentro de la UE.
-					</span>
-				</p>
-			</li>
-			<li
-				dir="ltr"
-				style={{
-					listStyleType: 'decimal',
-					fontSize: '9pt',
-					fontFamily: 'inherit',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre',
-					marginLeft: '-13.5pt'
-				}}
-			>
-				<p
-					dir="ltr"
-					style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-				>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'Raleway,sans-serif',
-
-							backgroundColor: 'transparent',
-							fontWeight: 700,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						Formulario de registro de cuenta:&nbsp;
-					</span>
-					<span
-						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
-
-							backgroundColor: 'transparent',
-							fontWeight: 400,
-							fontStyle: 'normal',
-							fontVariant: 'normal',
-							textDecoration: 'none',
-							verticalAlign: 'baseline',
-							whiteSpace: 'pre-wrap'
-						}}
-					>
-						En este caso, solicito los siguientes datos personales: nombre,
-						email, para gestionar el alta de registro de tu cuenta a mi
-						comunidad. Te informo que los datos que me facilitas estarán
-						ubicados en los servidores de Soluciones Web On Line, S.L.
-						(proveedor de hosting de Ou Mamma) dentro de la UE.
-					</span>
-				</p>
-			</li>
-		</ol>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -2091,8 +1384,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2133,8 +1426,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2172,8 +1465,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2185,9 +1478,82 @@ const Privacy = () => (
 						}}
 					>
 						También se recogen otros datos no identificativos que se obtienen
-						mediante algunas cookies que se descargan en el ordenador del
-						usuario cuando navega en esta web que detallo en la&nbsp;política de
-						cookies.
+						mediante algunas&nbsp;
+					</span>
+					<a
+						href="https://oumamma.com/cookies"
+						style={{ textDecoration: 'none' }}
+					>
+						<span
+							style={{
+								fontSize: '11pt',
+								fontFamily: 'inherit',
+								color: '#27ccc0',
+								backgroundColor: 'transparent',
+								fontWeight: 400,
+								fontStyle: 'normal',
+								fontVariant: 'normal',
+								textDecoration: 'none',
+								verticalAlign: 'baseline',
+								whiteSpace: 'pre-wrap'
+							}}
+						>
+							cookies
+						</span>
+					</a>
+					<span
+						style={{
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
+
+							backgroundColor: 'transparent',
+							fontWeight: 400,
+							fontStyle: 'normal',
+							fontVariant: 'normal',
+							textDecoration: 'none',
+							verticalAlign: 'baseline',
+							whiteSpace: 'pre-wrap'
+						}}
+					>
+						&nbsp;que se descargan en el ordenador del usuario cuando navega en
+						esta web que detallo en la política de&nbsp;
+					</span>
+					<a
+						href="https://oumamma.com/cookies"
+						style={{ textDecoration: 'none' }}
+					>
+						<span
+							style={{
+								fontSize: '11pt',
+								fontFamily: 'inherit',
+								color: '#27ccc0',
+								backgroundColor: 'transparent',
+								fontWeight: 400,
+								fontStyle: 'normal',
+								fontVariant: 'normal',
+								textDecoration: 'none',
+								verticalAlign: 'baseline',
+								whiteSpace: 'pre-wrap'
+							}}
+						>
+							cookies
+						</span>
+					</a>
+					<span
+						style={{
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
+
+							backgroundColor: 'transparent',
+							fontWeight: 400,
+							fontStyle: 'normal',
+							fontVariant: 'normal',
+							textDecoration: 'none',
+							verticalAlign: 'baseline',
+							whiteSpace: 'pre-wrap'
+						}}
+					>
+						.
 					</span>
 				</p>
 			</li>
@@ -2214,8 +1580,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2243,6 +1609,9 @@ const Privacy = () => (
 				</p>
 			</li>
 		</ul>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -2261,14 +1630,17 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Ou Mamma, no vende, alquila ni cede datos de carácter personal que
-				puedan identificar al usuario, ni lo hará en el futuro, a terceros sin
-				el consentimiento previo. Sin embargo, en algunos casos se pueden
-				realizar colaboraciones con otros profesionales, en esos casos, se
-				requerirá consentimiento a los usuarios informando sobre la identidad
-				del colaborador y la finalidad de la colaboración. Siempre se realizará
-				con los más estrictos estándares de seguridad.
+				Oumamma.com, no vende, alquila ni cede datos de carácter personal que
+				puedan identificar al usuario, a terceros sin el consentimiento previo.
+				Sin embargo, en algunos casos se pueden realizar colaboraciones con
+				otros profesionales, en esos casos, se requerirá consentimiento a los
+				usuarios informando sobre la identidad del colaborador y la finalidad de
+				la colaboración. Siempre se realizará con los más estrictos estándares
+				de seguridad.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -2288,7 +1660,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				legitimación para el tratamiento de tus datos
+				Legitimación para el tratamiento de tus datos
 			</span>
 		</p>
 		<p
@@ -2376,6 +1748,9 @@ const Privacy = () => (
 				comercial.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -2394,7 +1769,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				¿por cuánto tiempo conservaré tus datos?
+				¿Por cuánto tiempo conservaremos tus datos?
 			</span>
 		</p>
 		<p
@@ -2442,8 +1817,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2481,8 +1856,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2498,6 +1873,9 @@ const Privacy = () => (
 				</p>
 			</li>
 		</ul>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -2516,7 +1894,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				¿a qué destinatarios se comunicarán tus datos?
+				¿A qué destinatarios se comunicarán tus datos?
 			</span>
 		</p>
 		<p
@@ -2665,8 +2043,11 @@ const Privacy = () => (
 				}}
 			>
 				, trata los datos con la finalidad de realizar sus servicios como
-				proveedor de hosting a Erika López Antón.
+				proveedor de hosting.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -2686,7 +2067,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Plataforma web:&nbsp;
+				Plataforma:&nbsp;
 			</span>
 			<span
 				style={{
@@ -2702,9 +2083,9 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				WordPress.org, &nbsp;más información en&nbsp;
+				Landbot.com, &nbsp;más información en&nbsp;
 			</span>
-			<a href="https://wordpress.org/" style={{ textDecoration: 'none' }}>
+			<a href="https://landbot.io" style={{ textDecoration: 'none' }}>
 				<span
 					style={{
 						fontSize: '11pt',
@@ -2719,7 +2100,7 @@ const Privacy = () => (
 						whiteSpace: 'pre-wrap'
 					}}
 				>
-					https://wordpress.org/
+					https://landbot.io
 				</span>
 			</a>
 			<span
@@ -2737,80 +2118,11 @@ const Privacy = () => (
 				}}
 			>
 				&nbsp;trata los datos con la finalidad de realizar sus servicios de
-				soporte a Erika López Antón.
+				soporte.
 			</span>
 		</p>
-		<p
-			dir="ltr"
-			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
-		>
-			<span
-				style={{
-					fontSize: '12pt',
-					fontFamily: 'Raleway,sans-serif',
-
-					backgroundColor: 'transparent',
-					fontWeight: 700,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre-wrap'
-				}}
-			>
-				Email marketing:
-			</span>
-			<span
-				style={{
-					fontSize: '12pt',
-					fontFamily: 'Raleway,sans-serif',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre-wrap'
-				}}
-			>
-				&nbsp;SendinBlue, con domicilio en Europa. Más información en&nbsp;
-			</span>
-			<a href="https://es.sendinblue.com/" style={{ textDecoration: 'none' }}>
-				<span
-					style={{
-						fontSize: '11pt',
-						fontFamily: 'inherit',
-						color: '#27ccc0',
-						backgroundColor: 'transparent',
-						fontWeight: 400,
-						fontStyle: 'normal',
-						fontVariant: 'normal',
-						textDecoration: 'none',
-						verticalAlign: 'baseline',
-						whiteSpace: 'pre-wrap'
-					}}
-				>
-					https://es.sendinblue.com
-				</span>
-			</a>
-			<span
-				style={{
-					fontSize: '12pt',
-					fontFamily: 'Raleway,sans-serif',
-
-					backgroundColor: 'transparent',
-					fontWeight: 400,
-					fontStyle: 'normal',
-					fontVariant: 'normal',
-					textDecoration: 'none',
-					verticalAlign: 'baseline',
-					whiteSpace: 'pre-wrap'
-				}}
-			>
-				&nbsp;SendinBlue trata los datos con la finalidad de realizar sus
-				servicios de gestión de email marketing a Ou Mamma.
-			</span>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -2856,6 +2168,15 @@ const Privacy = () => (
 				transmitida y archivada por Google en los servidores de Estados Unidos.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
+		<p>
+			<br />
+		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -2874,7 +2195,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				datos de navegación
+				Datos de navegación
 			</span>
 		</p>
 		<p
@@ -2929,8 +2250,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2968,8 +2289,8 @@ const Privacy = () => (
 				>
 					<span
 						style={{
-							fontSize: '9pt',
-							fontFamily: 'inherit',
+							fontSize: '12pt',
+							fontFamily: 'Raleway,sans-serif',
 
 							backgroundColor: 'transparent',
 							fontWeight: 400,
@@ -2985,6 +2306,9 @@ const Privacy = () => (
 				</p>
 			</li>
 		</ul>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -3003,11 +2327,14 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Utilizo esta información para analizar tendencias, administrar el sitio,
-				rastrear los movimientos de los usuarios alrededor del sitio y para
-				recopilar información demográfica sobre nuestra base de usuarios en su
-				conjunto.
+				Utilizamos esta información para analizar tendencias, administrar el
+				sitio, rastrear los movimientos de los usuarios alrededor del sitio y
+				para recopilar información demográfica sobre nuestra base de usuarios en
+				su conjunto.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -3027,7 +2354,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				tus derechos al facilitar tus datos personales
+				Tus derechos al facilitar tus datos personales
 			</span>
 		</p>
 		<p
@@ -3140,10 +2467,12 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Erika López Antón dejará de tratar los datos, salvo por motivos
-				legítimos imperiosos, o el ejercicio o la defensa de posibles
-				reclamaciones.
+				Oumamma.com dejará de tratar los datos, salvo por motivos legítimos
+				imperiosos, o el ejercicio o la defensa de posibles reclamaciones.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -3186,9 +2515,9 @@ const Privacy = () => (
 			</a>
 			<span
 				style={{
-					fontSize: '12pt',
-					fontFamily: 'Raleway,sans-serif',
-
+					fontSize: '11pt',
+					fontFamily: 'inherit',
+					color: '#27ccc0',
 					backgroundColor: 'transparent',
 					fontWeight: 400,
 					fontStyle: 'normal',
@@ -3200,6 +2529,9 @@ const Privacy = () => (
 			>
 				.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -3219,7 +2551,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				secreto y seguridad de los datos
+				Secreto y seguridad de los datos
 			</span>
 		</p>
 		<p
@@ -3245,7 +2577,7 @@ const Privacy = () => (
 				utilizarlos de acuerdo con la finalidad de los mismos, así como a dar
 				cumplimiento a su obligación de guardarlos y adaptar todas las medidas
 				para evitar la alteración, pérdida, tratamiento o acceso no autorizado
-				(Como los protocolos Https que utilizo), de conformidad con lo
+				(Como los protocolos Https que utilizamos), de conformidad con lo
 				establecido en la normativa vigente de protección de datos.
 			</span>
 		</p>
@@ -3272,6 +2604,9 @@ const Privacy = () => (
 				fraudulentos a ellos por parte de terceros.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '7.5pt' }}
@@ -3290,7 +2625,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				exactitud y veracidad de los datos
+				Exactitud y veracidad de los datos
 			</span>
 		</p>
 		<p
@@ -3312,14 +2647,16 @@ const Privacy = () => (
 				}}
 			>
 				Como usuario, eres el único responsable de la veracidad y corrección de
-				los datos que remitas a oumamma.com exonerando a&nbsp;Erika López Antón
-				(Ou Mamma), de cualquier responsabilidad al respecto. Los usuarios
-				garantizan y responden, en cualquier caso, de la exactitud, vigencia y
-				autenticidad de los datos personales facilitados y se comprometen a
-				mantenerlos debidamente actualizados. El usuario acepta proporcionar
-				información completa y correcta en el formulario de contacto o
-				suscripción.
+				los datos que remitas a oumamma.com exonerando oumamma.com, de cualquier
+				responsabilidad al respecto. Los usuarios garantizan y responden, en
+				cualquier caso, de la exactitud, vigencia y autenticidad de los datos
+				personales facilitados y se comprometen a mantenerlos debidamente
+				actualizados. El usuario acepta proporcionar información completa y
+				correcta en el formulario de contacto o suscripción.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -3339,7 +2676,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				aceptación y consentimiento
+				Aceptación y consentimiento
 			</span>
 		</p>
 		<p
@@ -3362,10 +2699,12 @@ const Privacy = () => (
 			>
 				El usuario declara haber sido informado de las condiciones sobre
 				protección de datos de carácter personal, aceptando y consintiendo el
-				tratamiento de los mismos por parte de&nbsp;Erika López Antón (Ou
-				Mamma)&nbsp;en la forma y para las finalidades indicadas en esta
-				política de privacidad
+				tratamiento de los mismos por parte de&nbsp;Oumamma.com&nbsp;en la forma
+				y para las finalidades indicadas en esta política de privacidad
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -3385,7 +2724,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				cambios en la política de privacidad
+				Cambios en la política de privacidad
 			</span>
 		</p>
 		<p
@@ -3406,12 +2745,15 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Ou Mamma, se reserva el derecho a modificar la presente política para
+				Oumamma.com, se reserva el derecho a modificar la presente política para
 				adaptarla a novedades legislativas o jurisprudenciales, así como a
 				prácticas de la industria. En dichos supuestos, el Prestador anunciará
 				en esta página los cambios introducidos con razonable antelación a su
 				puesta en práctica.
 			</span>
+		</p>
+		<p>
+			<br />
 		</p>
 		<p
 			dir="ltr"
@@ -3431,7 +2773,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				correos comerciales
+				Correos comerciales
 			</span>
 		</p>
 		<p
@@ -3485,6 +2827,9 @@ const Privacy = () => (
 				debidamente.
 			</span>
 		</p>
+		<p>
+			<br />
+		</p>
 		<p
 			dir="ltr"
 			style={{ lineHeight: '1.2', marginTop: '0pt', marginBottom: '0pt' }}
@@ -3503,7 +2848,7 @@ const Privacy = () => (
 					whiteSpace: 'pre-wrap'
 				}}
 			>
-				Documento revisado el 29/04/2018.
+				Documento revisado el 22/04/2020.
 			</span>
 		</p>
 		<p>
