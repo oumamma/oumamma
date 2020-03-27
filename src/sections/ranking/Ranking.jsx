@@ -3,6 +3,7 @@ import { Link, useParams, useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import useElementScroll from '../../hooks/useElementScroll';
 import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
+import AuthService from '../../services/auth/AuthService';
 import Loading from '../Loading';
 import './Ranking.scss';
 import TwitterShare from './share/TwitterShare';
@@ -55,6 +56,8 @@ const Ranking = () => {
 			setMyFuckPosition(fuckList.findIndex(isMyRow));
 			setLoading(false);
 		});
+
+		AuthService.signOut();
 	}, []);
 
 	const moneyListElem = useRef(null);

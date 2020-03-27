@@ -25,7 +25,6 @@ const Login = () => {
 
 	useEffect(() => {
 		const triggerWebhook = async () => {
-			console.log(landbotId, authData);
 			if (!landbotId) return;
 			if (!authData) return;
 			await SpreadsheetService.updateRow(
@@ -34,7 +33,6 @@ const Login = () => {
 				authData.providerId,
 				authData.displayName
 			);
-			AuthService.signOut();
 			setTimeout(() => setRedirect(true), 2000);
 		};
 		triggerWebhook();
