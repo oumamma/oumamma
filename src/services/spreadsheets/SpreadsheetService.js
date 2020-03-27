@@ -19,10 +19,10 @@ class SpreadsheetService {
 			// 		'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers'
 			// }
 		})
-			.then(res => {
-				console.log(res);
-				res.json();
-			})
+			// .then(res => {
+			// 	console.log(res);
+			// 	res.json();
+			// })
 			.catch(error => console.error('Error:', error))
 			.then(response => console.log('Success:', response));
 	}
