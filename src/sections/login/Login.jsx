@@ -10,6 +10,7 @@ const Login = () => {
 	const { id: landbotId } = useParams();
 	const authData = useContext(AuthContext);
 	const [redirect, setRedirect] = useState(false);
+	const [loading, setLoading] = useState(false);
 
 	const loginWithGoogle = useCallback(() => {
 		AuthService.triggerGoogleSignIn();
@@ -33,6 +34,7 @@ const Login = () => {
 				authData.providerId,
 				authData.displayName
 			);
+			setLoading(true);
 			setTimeout(() => setRedirect(true), 2000);
 		};
 		triggerWebhook();
@@ -51,16 +53,17 @@ const Login = () => {
 								<Redirect to={`/ranking/${authData.uid}`} />
 							) : (
 								<>
-									<button
+									{/* <button
 										type="button"
 										className="social oumamma-big"
 										onClick={() => setRedirect(true)}
 									>
 										Quiero ver mis resultados!
-									</button>
-									<button type="button" onClick={logOut}>
+									</button> */}
+									<span>Calculando tus resultados...</span>
+									{/* <button type="button" onClick={logOut}>
 										Log out
-									</button>
+									</button> */}
 								</>
 							)}
 						</>
