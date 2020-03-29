@@ -140,6 +140,7 @@
 				justify-content: space-around;
 				margin: 0 auto;
 				padding-bottom: 5vmin;
+
 				// background: url('/icon_broncano.png') top no-repeat;
 				// background-size: 60%;
 
@@ -177,10 +178,6 @@
 				span {
 					margin: 0 5px;
 				}
-			}
-
-			a.ig-share-link {
-				color: var(--color-blue);
 			}
 		}
 		.scroll-arrow {
@@ -286,12 +283,14 @@
 		text-align: center;
 		text-transform: uppercase;
 	}
+	.social-share-mobile-instagram {
+		margin-bottom: 10px;
+	}
 	.social-share-mobile {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 0 5%;
-		margin-bottom: 10px;
 		align-items: center;
 		height: var(--bottom-social-height);
 
@@ -319,6 +318,9 @@
 		width: auto;
 	}
 
+	a.ig-share-link {
+		color: var(--color-blue);
+	}
 	.hidden {
 		display: none;
 	}

@@ -118,16 +118,40 @@ const Ranking = () => {
 						<Link to="/" className="social oumamma-big landing-button">
 							Quiero mi entrevista!
 						</Link>
-						<div className="social-share-container social-share-mobile">
-							<h4 style={{ fontWeight: 'bold' }}>SHARE RANKING:</h4>
-							<div className="social-share-mobile-container">
-								<TwitterShare location={location}></TwitterShare>
-								<FacebookShare location={location}></FacebookShare>
-								<WhatsappShare
-									location={location}
-									isMobile={true}
-								></WhatsappShare>
-								<CopyClipboardShare location={location}></CopyClipboardShare>
+						<div className="social-share-container">
+							<div className="social-share-mobile">
+								<h4 style={{ fontWeight: 'bold' }}>SHARE RANKING:</h4>
+								<div className="social-share-mobile-container">
+									<TwitterShare location={location}></TwitterShare>
+									<FacebookShare location={location}></FacebookShare>
+									<WhatsappShare
+										location={location}
+										isMobile={true}
+									></WhatsappShare>
+									<CopyClipboardShare location={location}></CopyClipboardShare>
+								</div>
+							</div>
+							<div className="social-share-mobile-instagram">
+								<div>
+									Y si quieres posturear en
+									<a
+										className="ig-share-link"
+										href={'https://instagram.com/oumamma_ranking'}
+										target="_blank"
+									>
+										<span> Instagram</span>
+									</a>
+								</div>
+								<div>
+									screenshot + etiqueta
+									<a
+										className="ig-share-link"
+										href={'https://instagram.com/oumamma_ranking'}
+										target="_blank"
+									>
+										<span> @OUMAMMA_RANKING</span>
+									</a>
+								</div>
 							</div>
 						</div>
 					</>
@@ -154,7 +178,7 @@ const Ranking = () => {
 												{index + 1}
 											</div>
 											<div className={`ranking-list-element-name`}>
-												{result['Nombre red social']}
+												{result['Nombre red social'] || result['Nombre']}
 											</div>
 										</div>
 									))
@@ -282,7 +306,8 @@ const Ranking = () => {
 								{fuck.length > 0 ? (
 									fuck.map((result, index) => (
 										<div
-											key={`${index}${result['Nombre red social']}`}
+											key={`${index}${result['Nombre red social'] ||
+												result['Nombre']}`}
 											className={`ranking-list-element ${
 												isMyRow(result) ? 'my-element' : ''
 											} ${isFamous(result) ? 'famous' : ''}`}
@@ -291,7 +316,7 @@ const Ranking = () => {
 												{index + 1}
 											</div>
 											<div className={`ranking-list-element-name`}>
-												{result['Nombre red social']}
+												{result['Nombre red social'] || result['Nombre']}
 											</div>
 										</div>
 									))

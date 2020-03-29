@@ -7,7 +7,9 @@ const TwitterShare = ({ location }) => {
 			// href="https://twitter.com/intent/tweet?text=Ou%20Mamma"
 			href={`https://twitter.com/intent/tweet?original_referer=${encodeURI(
 				'https://oumamma.com' + location.pathname
-			)}&ref_src=twsrc%5Etfw&text=${'Ou mamma!'}&tw_p=tweetbutton&url=${encodeURI(
+			)}&ref_src=twsrc%5Etfw&text=${`Madafakas!! Mirad mi puesto en el @oumamma_ranking 🤘
+
+			¿Cuál es el vuestro losers?`}&tw_p=tweetbutton&url=${encodeURI(
 				'https://oumamma.com' + location.pathname
 			)}`}
 		>

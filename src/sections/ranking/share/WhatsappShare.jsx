@@ -7,7 +7,9 @@ const WhatsappShare = ({ location, isMobile }) => {
 	return (
 		<a
 			className="social whatsapp-round"
-			href={`${baseUrl}?text=Ouuu mamma! ${encodeURI(
+			href={`${baseUrl}?text=Madafakas!! Mirad mi puesto en el @oumamma_ranking 🤘
+
+			¿Cuál es el vuestro losers?  ${encodeURI(
 				'https://oumamma.com' + location.pathname
 			)}`}
 			target="_blank"
