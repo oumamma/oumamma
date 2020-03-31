@@ -136,7 +136,7 @@ const Ranking = () => {
 									Y si quieres posturear en
 									<a
 										className="ig-share-link"
-										href={'https://instagram.com/oumamma_ranking'}
+										href={'https://instagram.com/oumammaranking'}
 										target="_blank"
 									>
 										<span> Instagram</span>
@@ -146,10 +146,10 @@ const Ranking = () => {
 									screenshot + etiqueta
 									<a
 										className="ig-share-link"
-										href={'https://instagram.com/oumamma_ranking'}
+										href={'https://instagram.com/oumammaranking'}
 										target="_blank"
 									>
-										<span> @OUMAMMA_RANKING</span>
+										<span> @oumammaranking</span>
 									</a>
 								</div>
 							</div>
@@ -265,7 +265,7 @@ const Ranking = () => {
 											<span>Y si quieres posturear </span>
 											<a
 												className="ig-share-link"
-												href={'https://instagram.com/oumamma_ranking'}
+												href={'https://instagram.com/oumammaranking'}
 												target="_blank"
 											>
 												en IG
@@ -276,10 +276,10 @@ const Ranking = () => {
 											<span>Y etiquétanos </span>
 											<a
 												className="ig-share-link"
-												href={'https://instagram.com/oumamma_ranking'}
+												href={'https://instagram.com/oumammaranking'}
 												target="_blank"
 											>
-												@OUMAMMA_RANKING
+												@oumammaranking
 											</a>
 											<span> que lo mismo te llevas una sorpresa</span>
 										</h3>
