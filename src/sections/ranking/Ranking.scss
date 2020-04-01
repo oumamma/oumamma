@@ -263,7 +263,12 @@
 			}
 
 			&.famous {
-				// background-color: var(--color-blue-light);
+				&::after {
+					font-size: 16px;
+					content: '⭐';
+					position: absolute;
+					right: 0;
+				}
 
 				.ranking-list-element-name {
 					font-weight: bold;
