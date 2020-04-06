@@ -17,7 +17,6 @@ import './Login.scss';
 const Login = () => {
 	const authData = useContext(AuthContext);
 	const [redirect, setRedirect] = useState(false);
-	const [loading, setLoading] = useState(false);
 
 	const loginWithGoogle = useCallback(() => {
 		AuthService.triggerGoogleSignIn();
@@ -54,8 +53,7 @@ const Login = () => {
 				user.providerId,
 				user.displayName
 			);
-			setLoading(true);
-			setTimeout(() => setRedirect(true), 2000);
+			setRedirect(true);
 		};
 		triggerWebhook();
 	});

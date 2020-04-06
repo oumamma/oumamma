@@ -26,7 +26,7 @@ class SpreadsheetService {
 			loginType,
 			loginName,
 		};
-		fetch(this.host + '/new', {
+		return fetch(this.host + '/new', {
 			method: 'POST', // or 'PUT'
 			body: JSON.stringify(data),
 			headers: {
