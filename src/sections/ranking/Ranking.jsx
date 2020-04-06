@@ -34,23 +34,23 @@ const Ranking = () => {
 	}, [width]);
 
 	useEffect(() => {
-		SpreadsheetService.getRanking().then(res => {
+		SpreadsheetService.getRanking().then((res) => {
 			const moneyList = [...res]
-				.map(elem => ({
+				.map((elem) => ({
 					...elem,
-					Dinero: formatMoney(elem)
+					Dinero: formatMoney(elem),
 				}))
-				.filter(x => !isNaN(x.Dinero))
+				.filter((x) => !isNaN(x.Dinero))
 				.sort((a, b) => (a.Dinero < b.Dinero ? 1 : -1));
 			setMoney(moneyList);
 			setMyMoneyPosition(moneyList.findIndex(isMyRow));
 
 			const fuckList = [...res]
-				.map(elem => ({
+				.map((elem) => ({
 					...elem,
-					Sexo: formatSex(elem)
+					Sexo: formatSex(elem),
 				}))
-				.filter(x => !isNaN(x.Sexo))
+				.filter((x) => !isNaN(x.Sexo))
 				.sort((a, b) => (a.Sexo < b.Sexo ? 1 : -1));
 			setFuck(fuckList);
 			setMyFuckPosition(fuckList.findIndex(isMyRow));
@@ -84,11 +84,11 @@ const Ranking = () => {
 		scrollRanking(fuckListElem.current, percentile, fuck.length);
 	}, [fuckListElem, myFuckPosition]);
 
-	const formatMoney = useCallback(row => {
+	const formatMoney = useCallback((row) => {
 		return row.Dinero ? parseFloat(row.Dinero.replace(/\./g, '')) : undefined;
 	}, []);
 
-	const formatSex = useCallback(row => {
+	const formatSex = useCallback((row) => {
 		return row.Sexo ? parseFloat(row.Sexo.replace(/\./g, '')) : undefined;
 	}, []);
 
@@ -100,11 +100,11 @@ const Ranking = () => {
 		container.current.scrollLeft = 0;
 	}, [container]);
 
-	const isMyRow = useCallback(row => {
-		return loginId && row['ID red social'] === loginId;
+	const isMyRow = useCallback((row) => {
+		return loginId && row['loginid'] === loginId;
 	}, []);
 
-	const isFamous = useCallback(row => {
+	const isFamous = useCallback((row) => {
 		return row['Famoso'] === '1';
 	}, []);
 
@@ -169,7 +169,7 @@ const Ranking = () => {
 								{money.length > 0 ? (
 									money.map((result, index) => (
 										<div
-											key={`${index}${result['ID red social']}`}
+											key={`${index}${result['loginid']}`}
 											className={`ranking-list-element ${
 												isMyRow(result) ? 'my-element' : ''
 											} ${isFamous(result) ? 'famous' : ''}`}
@@ -239,7 +239,7 @@ const Ranking = () => {
 											style={{
 												fontWeight: 'bold',
 												fontSize: '40px',
-												marginBlockEnd: '0'
+												marginBlockEnd: '0',
 											}}
 										>
 											SHARE:
@@ -248,7 +248,7 @@ const Ranking = () => {
 											style={{
 												display: 'flex',
 												justifyContent: 'space-around',
-												width: '100%'
+												width: '100%',
 											}}
 										>
 											<TwitterShare location={location}></TwitterShare>
@@ -306,8 +306,9 @@ const Ranking = () => {
 								{fuck.length > 0 ? (
 									fuck.map((result, index) => (
 										<div
-											key={`${index}${result['Nombre red social'] ||
-												result['Nombre']}`}
+											key={`${index}${
+												result['Nombre red social'] || result['Nombre']
+											}`}
 											className={`ranking-list-element ${
 												isMyRow(result) ? 'my-element' : ''
 											} ${isFamous(result) ? 'famous' : ''}`}
