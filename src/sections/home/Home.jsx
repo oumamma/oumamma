@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
+import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
 
-const Home = () => {
+const Home = ({ history }) => {
 	useEffect(() => {
 		window.myLandbot = new window.LandbotFrameWidget({
 			container: '#myLandbot',
-			index: 'https://landbot.io/u/H-406891-4QTTZU2266FA6HCP/index.html'
+			index: 'https://landbot.io/u/H-406891-4QTTZU2266FA6HCP/index.html',
 		});
-		window.myLandbot.on('sendToLogin', data => {
-			window.location.href = data;
+		window.myLandbot.on('formFinished', (data) => {
+			SpreadsheetService.saveDataInMemory(data);
+			history.push('/login');
 		});
 	});
 

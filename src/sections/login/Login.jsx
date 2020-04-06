@@ -1,13 +1,20 @@
-import React, { useState, useCallback, useEffect, useContext } from 'react';
+import React, {
+	useState,
+	useCallback,
+	useEffect,
+	useContext,
+	useRef,
+} from 'react';
 import { Redirect } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { AuthContext } from '../AuthContainer';
 import AuthService from '../../services/auth/AuthService';
 import SpreadsheetService from '../../services/spreadsheets/SpreadsheetService';
+import { v1 as uuidv1 } from 'uuid';
+
 import './Login.scss';
 
 const Login = () => {
-	const { id: landbotId } = useParams();
 	const authData = useContext(AuthContext);
 	const [redirect, setRedirect] = useState(false);
 	const [loading, setLoading] = useState(false);
@@ -20,19 +27,32 @@ const Login = () => {
 		AuthService.triggerFacebookSignIn();
 	}, []);
 
-	const logOut = useCallback(() => {
-		AuthService.signOut();
-	}, []);
+	// const inputEl = useRef(null);
+	const [localAuthUser, setLocalAuthUser] = useState();
+	// const noLoginForm = useCallback((e) => {
+	// 	e.preventDefault();
+	// 	const name = inputEl.current.value;
+	// 	if (!name) return;
+	// 	setLocalAuthUser({
+	// 		uid: uuidv1(),
+	// 		providerId: 'local',
+	// 		displayName: name,
+	// 	});
+	// });
 
+	const [updating, setUpdating] = useState(false);
 	useEffect(() => {
 		const triggerWebhook = async () => {
-			if (!landbotId) return;
-			if (!authData) return;
+			if (!SpreadsheetService.chatData()) return;
+			if (!authData && !localAuthUser) return;
+			if (updating) return;
+
+			const user = authData || localAuthUser;
+			setUpdating(true);
 			await SpreadsheetService.updateRow(
-				landbotId,
-				authData.uid,
-				authData.providerId,
-				authData.displayName
+				user.uid,
+				user.providerId,
+				user.displayName
 			);
 			setLoading(true);
 			setTimeout(() => setRedirect(true), 2000);
@@ -53,17 +73,7 @@ const Login = () => {
 								<Redirect to={`/ranking/${authData.uid}`} />
 							) : (
 								<>
-									{/* <button
-										type="button"
-										className="social oumamma-big"
-										onClick={() => setRedirect(true)}
-									>
-										Quiero ver mis resultados!
-									</button> */}
 									<span>Calculando tus resultados...</span>
-									{/* <button type="button" onClick={logOut}>
-										Log out
-									</button> */}
 								</>
 							)}
 						</>
@@ -83,6 +93,18 @@ const Login = () => {
 							>
 								Google
 							</button>
+							{/* <form
+								style={{
+									display: 'flex',
+									flexDirection: 'column'
+								}}
+								onSubmit={noLoginForm}
+							>
+								<label className="cool-font">Pasas de conectarte?</label>
+								<label>Dinos cómo te llamas al menos, troll</label>
+								<input ref={inputEl} className="social oumamma-big"></input>
+								<button className="social oumamma-big">Enviar</button>
+							</form> */}
 						</>
 					)}
 				</div>
