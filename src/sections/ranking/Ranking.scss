@@ -263,16 +263,25 @@
 			}
 
 			&.famous {
-				&::after {
-					font-size: 16px;
-					content: '⭐';
-					position: absolute;
-					right: 1%;
-				}
+				justify-content: space-between;
+				border: 2px solid var(--color-violet-position);
+				// &::after {
+				// 	font-size: 16px;
+				// 	content: '⭐';
+				// 	position: absolute;
+				// 	right: 1%;
+				// }
 
 				.ranking-list-element-name {
 					font-weight: bold;
 					color: var(--color-violet-position);
+				}
+
+				.ranking-list-element-button {
+					align-self: flex-end;
+					position: relative;
+					top: 1px;
+					right: 8px;
 				}
 			}
 

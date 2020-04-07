@@ -1,7 +1,7 @@
 class SpreadsheetService {
 	constructor() {
 		this._lsKey = 'landbot_data';
-		// 	this.host = 'https://us-central1-oumamma-56c90.cloudfunctions.net/',
+		// this.host = 'http://localhost:5000/oumamma-56c90/us-central1/getRanking';
 		this.host =
 			'https://us-central1-oumamma-56c90.cloudfunctions.net/getRanking';
 	}

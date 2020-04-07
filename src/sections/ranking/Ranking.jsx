@@ -180,6 +180,21 @@ const Ranking = () => {
 											<div className={`ranking-list-element-name`}>
 												{result['Nombre red social'] || result['Nombre']}
 											</div>
+											{isFamous(result) && (
+												<a
+													href={`https://es.wikipedia.org/?search=${result[
+														'Nombre red social'
+													].replace('', '+')}`}
+													className="ranking-list-element-button"
+													target="_blank"
+												>
+													<img
+														width="25px"
+														height="25px"
+														src="/wikipedia.png"
+													></img>
+												</a>
+											)}
 										</div>
 									))
 								) : (
@@ -319,6 +334,21 @@ const Ranking = () => {
 											<div className={`ranking-list-element-name`}>
 												{result['Nombre red social'] || result['Nombre']}
 											</div>
+											{isFamous(result) && (
+												<a
+													href={`https://es.wikipedia.org/?search=${result[
+														'Nombre red social'
+													].replace('', '+')}`}
+													className="ranking-list-element-button"
+													target="_blank"
+												>
+													<img
+														width="25px"
+														height="25px"
+														src="/wikipedia.png"
+													></img>
+												</a>
+											)}
 										</div>
 									))
 								) : (
