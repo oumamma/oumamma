@@ -239,34 +239,6 @@ const Ranking = () => {
 										</Link>
 										<div></div>
 									</div>
-									{/* {loginId && money.length > 0 && (
-										<div>
-											<div className="img-container">
-												<img src="/money.png" alt="Pray for money"></img>
-											</div>
-											{money.find(x => isMyRow(x)) ? (
-												<div key="" className="ranking-list-element">
-													<span className="cool-font">
-														{money.indexOf(money.find(x => isMyRow(x))) + 1}
-													</span>
-													<span className="">de</span>
-													<span className="cool-font"> {money.length} </span>
-												</div>
-											) : null}
-											<div className="img-container">
-												<img src="/fuck.png" alt="fuck"></img>
-											</div>
-											{fuck.find(x => isMyRow(x)) ? (
-												<div key="" className="ranking-list-element">
-													<span className="cool-font">
-														{fuck.indexOf(fuck.find(x => isMyRow(x))) + 1}
-													</span>
-													<span className="">de</span>
-													<span className="cool-font"> {fuck.length} </span>
-												</div>
-											) : null}
-										</div>
-									)} */}
 									<div>
 										<h1
 											style={{
@@ -321,7 +293,6 @@ const Ranking = () => {
 							)}
 						</div>
 					</div>
-
 					{isMobile && maxRight && (
 						<div
 							className={`scroll-arrow left ${

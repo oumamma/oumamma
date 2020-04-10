@@ -228,6 +228,10 @@
 
 			height: calc(var(--toilet-paper-container-height) - 11.5vh);
 			overflow: scroll;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			-ms-overflow-style: none;
 		}
 
 		.ranking-list-element {
