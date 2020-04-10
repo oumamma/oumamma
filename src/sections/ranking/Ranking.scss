@@ -247,12 +247,18 @@
 				position: absolute;
 				font-size: calc(var(--ranking-entry-font-size) * 1.2);
 
-				padding-left: 15px;
-				padding-right: 15px;
+				padding-left: 9px;
 			}
 
 			.ranking-list-element-name {
-				margin-left: 25%;
+				margin-left: 19%;
+				text-transform: capitalize;
+			}
+
+			.ranking-list-element-buttons-container {
+				min-width: 50px;
+				display: flex;
+				justify-content: flex-end;
 			}
 
 			&.my-element {
@@ -264,7 +270,7 @@
 
 			&.famous {
 				justify-content: space-between;
-				border: 2px solid var(--color-violet-position);
+				// border: 2px solid var(--color-violet-position);
 				// &::after {
 				// 	font-size: 16px;
 				// 	content: '⭐';

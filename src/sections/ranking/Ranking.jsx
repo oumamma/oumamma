@@ -181,19 +181,37 @@ const Ranking = () => {
 												{result['Nombre red social'] || result['Nombre']}
 											</div>
 											{isFamous(result) && (
-												<a
-													href={`https://es.wikipedia.org/?search=${result[
-														'Nombre red social'
-													].replace('', '+')}`}
-													className="ranking-list-element-button"
-													target="_blank"
-												>
-													<img
-														width="25px"
-														height="25px"
-														src="/wikipedia.png"
-													></img>
-												</a>
+												<div className="ranking-list-element-buttons-container">
+													<a
+														href={`https://es.wikipedia.org/?search=${result[
+															'Nombre red social'
+														].replace('', '+')}`}
+														className="ranking-list-element-button"
+														target="_blank"
+													>
+														<img
+															width="25px"
+															height="25px"
+															src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADT09P09PQnJyf8/Py6urrj4+MsLCz4+Pjz8/Orq6vQ0NDt7e3o6OjZ2dm0tLR2dnZjY2OioqLAwMCXl5cvLy8SEhIgICCenp5sbGzHx8eIiIg0NDR+fn5ZWVkYGBhRUVGOjo5FRUU7OztLS0tpaWkMDAwWFhZJTQjMAAAJHElEQVR4nO2c61YbOwyF0yZDE8qlUAqhtEAa2vT9n/AskknGW9625Mlc0nX0/QRrYlu2LMmamUwcx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ec5//M5cVHMxefhPC1JoECV1rzKmxdqU/fcZ4f4NOHIr6B8Isu8Bw0/6q2Xl4FUz+3duopO8IH62NqFqWz02jx3PBbN83Tn819esiO0PyYqMOTyWeLwMWh+SdD69vm6Tf2TvkIi/ARRvgIER8hJzvCtf050cM+WgQuD80rwwH3q3n6N3Of1tkRXq1mAfzEWt7Pa9YXIPx4v5V6pULz93+9nYUzsj780HwJjTf1X28Cp6Z6ngc9E7MTdnp1NckzbVhwrbxNFjumUrbail0yoe/b/6V+S+jzbrH7fWy9aHpWoT90WwW9VsYn+E2HeK1I/WJClzmJL9B0pXcMZ0TrUIYLOsLvitSCCf3ICeAi1Tt8B+1/F41JwJWorXSqxEW6/WPRBE6kQbzQBdLgZO35pkjRnfiYbH6+gYYyJou5hvZ526lCj49lRh9bfhChtMuPrXPLueYWBO7KRiQ5o0r8okhRJaaEROMq0awBfYW34jEJ0AhYn8qUmBL6Dq2+6l3Ch38uHFAE98U+KlLnTIgH37ipZroKpyCwaTEmAR3hrSbFlMjPOcx9nNE2AFpeg841eDpFOzDoTmQHHeY+LEcbPlPXucqUeqeqxWN5Fab54qMNbZ92cJmgXv2rkrSbXDGpWPPY3xdDd36ChNYNE3TB6SaMKfE5aoX/1w97saoNh6cFZjX0A4MqUfrfuMnjCYhBw6SZAyNcifnE64RH5WLbiD2ejT924NlyowvYoBkEdc+wiRH+HrroFquBXTGsaht0wekrhE0MbF98rurtTuSsWQyTEXSsatRdw3JNs7ABToHF/UKlHxH5SnD171EtNVNiEAngDCwtHQEJQy7ADsYrNarDxJQY2OAV/EO1XBNpei0SZmg646fqMTElHtwWfKZpT92HEkclL2JoOkONPZkSD64bPlKLVt7BjIPBSS+BXg7q885MVG3i0V8zJGfEsp4fNR4CuoPY2TRMibtjuoIVZ3JOMH2r5RmKoTkp3adgSty6LhhZm/zLPyBy5HgIVIlqhpmdM9vbCPyT4bAX/kE6ddcazEvX6I4WU+JEHt2mXAsGK5Y5KYTeFelpFabEr8L7urcE6pj66STyldB0hm6yibMwE/ow2X0MxA1hSDkVG6HuOTFzimvUlLRezEIRSyTZAkxy1ejer1pIZDnshRnoKPKV0Dsl/ajmbnuDLQZ6K/vRltA7JT0XRN32BlMY+1Qu0gaazviliuWVaNtSq1BEzUe3h+WkNrqpzyrRZBXRXJk2bjtohYjuIOaqNGwHG/gNnUa+2V+qMRj7VXKAD6asPDpsR14Y5qFK1FPx6Z1oixDAxB19YZiHbak/ulhKibYgbwolOh1HvhKqDf385UUd1lQLRFr5AtkOYB6KIbrjjo0x4QkO29F3vhpUGy3FjAlPCL7/dnBhqMByUoZ5XREx47UDOGw9RL4Sls74qYuxVJbNf4bT9KGTC0MFls4wWAxSmWM72MB86z5iB7ASG4PJIDvRFBjiEdxL5BvxlwzR4O2TDWxRIvjCPUW+ElZiYzgwyE40JOYxPdNT5CupWJ2UIfe1iqX0/Qvpmd4iXwnLSemVO+dkYvSdCM07vDDMc0524qsqRTMEWqgH6ZkeI18JK7HRrAYtdVNjPbjdOKpUtoxpi74mXpjI9/qp5Bc6haUz8puEVztoKw8c9l4jXwnLSeXPqj9EQp0YiNVmmYY9wGq6cv5GOlWTUyKs7J4jXwlLZ+SSSpnEd9odgpViqtXoksStWYLcG7RpJcL50nvkK2HpjPQ6eiOtdSWCCnu4MFQg6y6ZBeMV/3tSvhi4TgNEvhJmO1Ieyoy01ZUIUkNEvhIS0ia0ob17yc8ZUHxHpbJlmPMS+OLWhtSNUzGIJ8dQIVUiTTKgF/tILlqZEiEn0FmpbBnEfrCLKOFyV8wFJyqC9ExvF4YKJCdF7iGil3hIGBVvM/BjDfcG/UBKbGLn8TL6Pyt5iJQIDttgkW8EidqjaAijpm18QMJLuYFhKXdY7VwKSWdIHwx9n13qiYSXG6FEmIROS2ULibsqjQJex9UaJkpEtx0OmJ4vDPMQy49GA/PAewVPSaIH/E7wEcZUoXyF950HqFfENPBBv0SJ4HiGnvr9UIPhEMsfhjno9zTnNis+Sol1XipbBklnhAcGutxBEoAs7yDjGmp+3v+FYR6Szmj2DR6Y4YlAzsTlYShgfzt4SfQ4SA7tkPXDklR8ZZEo8bC8w/zB6/CRr4SkM/YGBY9LVMYitlH7QlqYtF5KZcsgOak6VJjCIKQ/R7yF2qaAIzu+ClkmdLMzKXgkyCTOInb5dpMAH3IbJfKVkHTGdkGibxY7JmQnbmcBlDvMna9GnJPaWni0suR+Ih7hVomhbkeKfCXkhv5O7k+WFCU78UzE1WNFvpI4nbGWNpZFeFVsTtcYVo8W+UpIic0njJp4Eo4o8QnkeiyVLSTOh96gheUGYxHLvYSbetALwzz5nHba5iufMB3wzldDvGoXkTq2aVXHgVEjX0k+q52+c8gqcdA7Xw2yoxpy8c+/osLEG0M1uRA2o/yRI18JfWNoR7Y0M70TDd9TGhZaD7Qln0hKKnH0yFeSVKJSnZc0w6emwsRXbD7oGfmEEgcplS0jURKklxOyclXDO9QjwL8prleE0leoTyLyldA3hiw9ZeZ0oFLZQlhhl+V2mijxRCJfCSmxMWXKqvimdbwLwzxROsP4UcNIiQOWypYR5aSsjpdU4qmqMKpVN/vOQokdf1unS0SJjT38QXM66oWhAuSkCpIQkCQ48sPA/QI9LckjhTvxpCLfiCASLjKIwdToH9galcBmlLklzb32iUW+EYcsb+FLWAclLk9bhUFuqfROZR8njlAqW8aivhsrvtncK7GPTnXLLif1t/xmc95uZoZnV2LTorL+rtXiHoP3dEar74i/ldunkVi3dJ2vXz+sT+Ha3sB1y35WpxtTOI7jOI7jOI7jOI7jOI7jOI7jOI7jOI7jOI7jOI7jOM6/wn8/BmLR+89sugAAAABJRU5ErkJggg=="
+															// src="/wikipedia.png"
+															// src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Wikipedia_article_icon_BLACK.svg/1200px-Wikipedia_article_icon_BLACK.svg.png"
+														></img>
+													</a>
+													{result['Youtube'] && (
+														<a
+															href={result['Youtube']}
+															className="ranking-list-element-button"
+															target="_blank"
+														>
+															<img
+																width="25px"
+																height="25px"
+																// src="/youtube.png"
+																src="https://seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png"
+															></img>
+														</a>
+													)}
+												</div>
 											)}
 										</div>
 									))
